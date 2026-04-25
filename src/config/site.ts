@@ -6,15 +6,15 @@ export const siteConfig = {
     "Portfólio editorial bilíngue de design, arte, textos e projetos autorais.",
   url: process.env.NEXT_PUBLIC_SITE_URL ?? "https://portfolio-mois.es",
   contact: {
-    email: "hello@moises.design",
-    whatsapp: "5511999999999",
-    cvUrl: "/cv-placeholder.pdf",
+    email: "andreas.r.hennig@gmail.com",
+    whatsapp: "5551997857796",
+    cvUrl: "/CV_AndreasHennig.pdf",
   },
   profileImage: "/profile.png",
   socials: {
-    linkedin: "https://www.linkedin.com/",
-    instagram: "https://www.instagram.com/",
-    substack: "https://substack.com/",
+    linkedin: "https://www.linkedin.com/in/andreas-r-hennig/",
+    instagram: "https://www.instagram.com/adrneas/",
+    substack: "https://substack.com/@adrneas",
   },
 } as const;
 

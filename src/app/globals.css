@@ -256,7 +256,7 @@ svg {
 }
 
 .home-rotator {
-  min-height: clamp(3.2rem, 6.4vw, 5.7rem);
+  min-height: clamp(3rem, 6vw, 5.35rem);
   width: min(900px, 100%);
   overflow: hidden;
 }
@@ -265,7 +265,7 @@ svg {
   display: inline-block;
   color: rgba(23, 23, 22, 0.46);
   font-family: var(--font-geist-sans), Arial, Helvetica, sans-serif;
-  font-size: clamp(3rem, 6.1vw, 5.55rem);
+  font-size: clamp(2.82rem, 5.65vw, 5.18rem);
   font-weight: 560;
   line-height: 0.92;
 }
@@ -1078,11 +1078,11 @@ svg {
   }
 
   .home-rotator {
-    min-height: clamp(3.05rem, 13.5vw, 4.25rem);
+    min-height: clamp(2.85rem, 12.6vw, 4rem);
   }
 
   .home-rotator__phrase {
-    font-size: clamp(2.45rem, 12vw, 3.65rem);
+    font-size: clamp(2.25rem, 11vw, 3.4rem);
   }
 
   .home-copy {

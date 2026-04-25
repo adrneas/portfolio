@@ -137,7 +137,7 @@ export function HomeHeroMotion({
             >
               <a href={profile.socials.linkedin} target="_blank" rel="noreferrer">
                 <Link2 aria-hidden size={18} />
-                Linkedin
+                LinkedIn
               </a>
               <a href={profile.socials.instagram} target="_blank" rel="noreferrer">
                 <Camera aria-hidden size={18} />

@@ -11,12 +11,8 @@ export function ContactStrip({ locale }: ContactStripProps) {
 
   return (
     <div className="contact-strip" aria-label="Contact links">
-      <a className="button-link accent" href={getEmailHref()}>
-        <Mail aria-hidden size={17} />
-        {dictionary.cta.email}
-      </a>
       <a
-        className="button-link secondary"
+        className="button-link accent"
         href={getWhatsappHref()}
         target="_blank"
         rel="noreferrer"
@@ -24,7 +20,16 @@ export function ContactStrip({ locale }: ContactStripProps) {
         <MessageCircle aria-hidden size={17} />
         {dictionary.cta.whatsapp}
       </a>
-      <a className="button-link" href={siteConfig.contact.cvUrl}>
+      <a className="button-link secondary" href={getEmailHref()}>
+        <Mail aria-hidden size={17} />
+        {dictionary.cta.email}
+      </a>
+      <a
+        className="button-link"
+        href={siteConfig.contact.cvUrl}
+        target="_blank"
+        rel="noreferrer"
+      >
         <FileDown aria-hidden size={17} />
         {dictionary.cta.cv}
       </a>

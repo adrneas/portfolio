@@ -46,18 +46,18 @@ export const dictionaries = {
       intro:
         "Um portfólio que organiza trabalho profissional e interesses autorais com a mesma atenção: estratégia, forma, texto, desenho, código e repertório.",
       rotatingPhrases: [
-        "work com critério visual",
-        "writing como processo",
-        "drawings como pesquisa",
-        "dev como laboratório",
-        "travel como repertório",
+        "nômade digital há 2 anos",
+        "desenho enquanto converso e vice versa",
+        "aprendendo a dançar forró",
+        "me divirto criando e estudando",
+        "valorizo curiosidade e empatia",
       ],
       rotatingPrefix: "Agora:",
       profile: {
         imageAlt: "Retrato de Andreas",
         socialLabel: "Links sociais de Andreas",
         description:
-          "Designer visual e de produto, interessado em transformar sistemas complexos em experiências claras, memoráveis e com uma voz própria.",
+          "Há 31 anos curioso por viver e criar esse mundão do jeito que for. Como product designer, gosto da imersão em projetos complexos com desafios de simplificação e aperfeiçoamento.",
       },
       featuredWork: "Trabalhos em destaque",
       otherRooms: "Work / Fun",
@@ -193,18 +193,18 @@ export const dictionaries = {
       intro:
         "A portfolio that gives professional work and authored interests the same care: strategy, form, writing, drawing, code, and references.",
       rotatingPhrases: [
-        "work with visual rigor",
-        "writing as process",
-        "drawings as research",
-        "dev as a lab",
-        "travel as reference",
+        "digital nomad for 2 years",
+        "I draw while I talk and vice versa",
+        "learning to dance forró",
+        "having fun creating and studying",
+        "I value curiosity and empathy",
       ],
       rotatingPrefix: "Now:",
       profile: {
         imageAlt: "Portrait of Andreas",
         socialLabel: "Andreas social links",
         description:
-          "Visual and product designer interested in turning complex systems into clear, memorable experiences with a point of view.",
+          "Curious for 31 years about living and creating in this big world however possible. As a product designer, I enjoy immersing myself in complex projects with challenges of simplification and refinement.",
       },
       featuredWork: "Featured work",
       otherRooms: "Work / Fun",
