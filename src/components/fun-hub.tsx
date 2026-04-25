@@ -263,6 +263,17 @@ export function FunHub({
             transition={{ duration: shouldReduceMotion ? 0 : 0.18 }}
           >
             <button
+              aria-label="Fechar imagem"
+              className="drawing-overlay__close"
+              onClick={(event) => {
+                event.stopPropagation();
+                closeOverlay();
+              }}
+              type="button"
+            >
+              x
+            </button>
+            <button
               aria-label="Imagem anterior"
               className="drawing-overlay__nav drawing-overlay__nav--previous"
               onClick={(event) => {
