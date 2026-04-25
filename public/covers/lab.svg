@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" role="img" aria-label="Abstract lab prototype">
+  <rect width="1200" height="800" fill="#171716"/>
+  <circle cx="316" cy="306" r="150" fill="#c8ff32"/>
+  <circle cx="700" cy="446" r="196" fill="#3448ff"/>
+  <rect x="662" y="146" width="310" height="180" fill="#fbfbf7"/>
+  <path d="M316 306 700 446 818 236" stroke="#fbfbf7" stroke-width="8"/>
+  <path d="M196 610h780" stroke="#ff5c3f" stroke-width="34"/>
+  <path d="M196 680h410" stroke="#fbfbf7" stroke-width="26"/>
+</svg>

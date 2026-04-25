@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" role="img" aria-label="Chessbor cover">
+  <rect width="1200" height="800" fill="#171716"/>
+  <g transform="translate(168 120)">
+    <rect width="560" height="560" fill="#fbfbf7"/>
+    <path d="M0 0h140v140H0zM280 0h140v140H280zM140 140h140v140H140zM420 140h140v140H420zM0 280h140v140H0zM280 280h140v140H280zM140 420h140v140H140zM420 420h140v140H420z" fill="#3448ff"/>
+  </g>
+  <path d="M860 264h98v286H762V264h98v-78h-52v-64h202v64h-52z" fill="#c8ff32"/>
+  <text x="760" y="648" fill="#fbfbf7" font-family="Arial, sans-serif" font-size="76" font-weight="700">chessbor</text>
+</svg>

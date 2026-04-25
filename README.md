@@ -1,36 +1,64 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Portfolio editorial bilingue
 
-## Getting Started
+Portifolio em Next.js com App Router, TypeScript e conteudo local em MDX.
 
-First, run the development server:
+## Rodando localmente
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Abra `http://localhost:3000`.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Conteudo
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Os arquivos ficam em `content/<colecao>/<locale>/<slug>.mdx`.
 
-## Learn More
+Colecoes disponiveis:
 
-To learn more about Next.js, take a look at the following resources:
+- `work`
+- `art`
+- `notes`
+- `lab`
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Campos base:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```yaml
+title: "Titulo"
+slug: "slug-da-pagina"
+locale: "pt"
+year: 2026
+type: "Identidade"
+summary: "Resumo curto."
+cover: "/covers/imagem.svg"
+tags: ["tag"]
+featured: true
+draft: false
+```
 
-## Deploy on Vercel
+Campos extras para `work`:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+```yaml
+role: "Seu papel"
+discipline: ["Product design", "UI"]
+client: "Cliente"
+collaborators: ["Pessoa ou time"]
+outcome: "Resultado"
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Itens com `draft: true` nao aparecem nas listas nem geram paginas publicas.
+
+## Configuracao
+
+Edite `src/config/site.ts` para trocar nome, bio curta, email, WhatsApp, URL do site e link de CV.
+
+Antes de publicar, substitua `public/cv-placeholder.pdf` pelo CV real ou altere `cvUrl`.
+
+## Rotas
+
+- `/` e `/en`
+- `/work`, `/art`, `/notes`, `/lab`
+- `/en/work`, `/en/art`, `/en/notes`, `/en/lab`
+- `/<colecao>/<slug>` e `/en/<colecao>/<slug>`
+- `/about` e `/en/about`

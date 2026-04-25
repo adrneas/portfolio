@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" role="img" aria-label="Fast Reader cover">
+  <rect width="1200" height="800" fill="#171716"/>
+  <path d="M130 250h940" stroke="#fbfbf7" stroke-width="28"/>
+  <path d="M130 360h720" stroke="#fbfbf7" stroke-width="28" opacity=".58"/>
+  <path d="M130 470h520" stroke="#fbfbf7" stroke-width="28" opacity=".28"/>
+  <circle cx="666" cy="360" r="150" fill="#ff5c3f"/>
+  <path d="M620 360h92" stroke="#171716" stroke-width="16"/>
+  <path d="M706 315l58 45-58 45" fill="none" stroke="#171716" stroke-width="16"/>
+  <text x="130" y="650" fill="#fbfbf7" font-family="Arial, sans-serif" font-size="76" font-weight="700">fast reader</text>
+</svg>

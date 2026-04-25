@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" role="img" aria-label="Vinyl Spin cover">
+  <rect width="1200" height="800" fill="#fbfbf7"/>
+  <circle cx="440" cy="392" r="238" fill="#171716"/>
+  <circle cx="440" cy="392" r="158" fill="none" stroke="#6b675f" stroke-width="4"/>
+  <circle cx="440" cy="392" r="86" fill="#c8ff32"/>
+  <circle cx="440" cy="392" r="18" fill="#171716"/>
+  <path d="M686 220h278v278H686z" fill="#3448ff"/>
+  <path d="M728 262h194v194H728z" fill="#ff5c3f"/>
+  <text x="686" y="612" fill="#171716" font-family="Arial, sans-serif" font-size="78" font-weight="700">vinyl spin</text>
+</svg>

@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" role="img" aria-label="Abstract reference atlas">
+  <rect width="1200" height="800" fill="#fbfbf7"/>
+  <rect x="80" y="90" width="280" height="210" fill="#fff1ed" stroke="#171716" stroke-width="6"/>
+  <rect x="436" y="90" width="280" height="210" fill="#eef1ff" stroke="#171716" stroke-width="6"/>
+  <rect x="792" y="90" width="280" height="210" fill="#c8ff32" stroke="#171716" stroke-width="6"/>
+  <rect x="80" y="420" width="280" height="210" fill="#171716"/>
+  <rect x="436" y="420" width="280" height="210" fill="#ff5c3f" stroke="#171716" stroke-width="6"/>
+  <rect x="792" y="420" width="280" height="210" fill="#fbfbf7" stroke="#171716" stroke-width="6"/>
+  <path d="M220 300 576 420 932 300M220 420 576 300 932 420" stroke="#171716" stroke-width="5" fill="none"/>
+</svg>

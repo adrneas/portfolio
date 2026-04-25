@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" role="img" aria-label="Abstract product dashboard">
+  <rect width="1200" height="800" fill="#fbfbf7"/>
+  <rect x="72" y="70" width="1056" height="660" rx="24" fill="#f5f5f0" stroke="#171716" stroke-width="6"/>
+  <rect x="118" y="124" width="250" height="552" fill="#171716"/>
+  <rect x="410" y="130" width="650" height="88" fill="#c8ff32" stroke="#171716" stroke-width="5"/>
+  <rect x="410" y="260" width="300" height="170" fill="#eef1ff" stroke="#171716" stroke-width="5"/>
+  <rect x="760" y="260" width="300" height="170" fill="#fff1ed" stroke="#171716" stroke-width="5"/>
+  <path d="M430 510h590M430 575h510M430 640h360" stroke="#171716" stroke-width="28"/>
+  <circle cx="244" cy="192" r="54" fill="#ff5c3f"/>
+  <path d="M170 326h146M170 386h104M170 446h168" stroke="#f5f5f0" stroke-width="22"/>
+</svg>

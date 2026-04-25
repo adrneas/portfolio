@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" role="img" aria-label="OSE mocksite cover">
+  <rect width="1200" height="800" fill="#171716"/>
+  <rect x="142" y="128" width="916" height="544" fill="#fbfbf7"/>
+  <path d="M142 230h916" stroke="#171716" stroke-width="6"/>
+  <path d="M210 302h380v74H210zM210 420h520v28H210zM210 470h430v28H210z" fill="#171716"/>
+  <rect x="768" y="302" width="212" height="212" fill="#c8ff32"/>
+  <path d="M804 408h140M874 338v140" stroke="#171716" stroke-width="12"/>
+  <text x="210" y="608" fill="#3448ff" font-family="Arial, sans-serif" font-size="72" font-weight="700">OSE mocksite</text>
+</svg>

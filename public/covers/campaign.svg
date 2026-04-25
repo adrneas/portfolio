@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" role="img" aria-label="Abstract editorial campaign">
+  <rect width="1200" height="800" fill="#171716"/>
+  <rect x="74" y="80" width="360" height="560" fill="#fbfbf7"/>
+  <rect x="482" y="156" width="530" height="132" fill="#c8ff32"/>
+  <rect x="482" y="332" width="360" height="52" fill="#fbfbf7"/>
+  <rect x="482" y="420" width="450" height="52" fill="#fbfbf7"/>
+  <rect x="482" y="508" width="260" height="52" fill="#fbfbf7"/>
+  <circle cx="346" cy="590" r="144" fill="#ff5c3f"/>
+  <path d="M112 160h236M112 228h164M112 296h286" stroke="#171716" stroke-width="28"/>
+</svg>

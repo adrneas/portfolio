@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" role="img" aria-label="Syntropic cover">
+  <rect width="1200" height="800" fill="#f5f5f0"/>
+  <path d="M600 128c148 96 232 214 232 348 0 120-98 216-232 216s-232-96-232-216c0-134 84-252 232-348z" fill="#ff5c3f"/>
+  <path d="M600 176c70 104 92 196 70 276-18 66-72 126-160 180 24-112 20-194-12-246-28-46-54-76-78-96 58-36 118-74 180-114z" fill="#c8ff32"/>
+  <path d="M722 364c104 32 188 88 250 168-108 2-208 28-302 78 66-88 84-170 52-246z" fill="#3448ff"/>
+  <text x="154" y="650" fill="#171716" font-family="Arial, sans-serif" font-size="78" font-weight="700">syntropic</text>
+</svg>
