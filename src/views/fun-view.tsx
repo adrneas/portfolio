@@ -57,7 +57,9 @@ export function FunView({ locale }: FunViewProps) {
     >
       <section className="page-title fun-title">
         <div>
-          <p className="eyebrow">{dictionary.fun.eyebrow}</p>
+          {dictionary.fun.eyebrow ? (
+            <p className="eyebrow">{dictionary.fun.eyebrow}</p>
+          ) : null}
           <h1>{dictionary.fun.title}</h1>
           <p>{dictionary.fun.description}</p>
         </div>

@@ -33,7 +33,7 @@ export const dictionaries = {
     switchLabel: "EN",
     nav: {
       work: "Work",
-      fun: "Fun",
+      fun: "Brincadeiras",
       about: "Sobre",
     },
     cta: {
@@ -60,7 +60,7 @@ export const dictionaries = {
           "Há 31 anos curioso por viver e criar esse mundão do jeito que for. Como product designer, gosto da imersão em projetos complexos com desafios de simplificação e aperfeiçoamento.",
       },
       featuredWork: "Trabalhos em destaque",
-      otherRooms: "Work / Fun",
+      otherRooms: "Work / Brincadeiras",
       viewAll: "Ver arquivo",
       workPreview: {
         label: "Work",
@@ -71,12 +71,12 @@ export const dictionaries = {
         cta: "Ver work",
       },
       funPreview: {
-        label: "Fun",
-        title: "Travel, writing, drawings e dev no mesmo arquivo.",
+        label: "Brincadeiras",
+        title: "Viagem, escrita, desenhos e dev no mesmo arquivo.",
         description:
-          "A área autoral vai reunir diários visuais, textos, desenhos e experimentos de código depois da validação da home.",
+          "Coisas recentes entre viagem, texto, desenho e desenvolvimento de sisteminhas.",
         meta: "itens atuais",
-        cta: "Ver fun",
+        cta: "Ver brincadeiras",
       },
       status: [
         ["Foco", "Portfólio editorial"],
@@ -117,28 +117,29 @@ export const dictionaries = {
       },
     },
     fun: {
-      title: "Fun",
-      eyebrow: "Arquivo autoral",
+      title: "Brincadeiras",
+      eyebrow: "",
       description:
-        "Travel, writing, drawings e dev reunidos como extensões do processo: repertório, texto, desenho e experimentos.",
+        "Viagens, textos, desenhos e desenvolvimentos de sisteminhas. Coisas que eu tenho feito recentemente :)",
       empty:
         "Ainda não há itens publicados nesta categoria. A estrutura está pronta para receber novos diários e experimentos.",
       view: "Abrir",
       categories: {
         travel: {
-          label: "Travel",
-          title: "Diários visuais",
+          label: "Viagem",
+          title: "Viagem",
           description: "Lugares, percursos e imagens que viram repertório.",
         },
         writing: {
-          label: "Writing",
-          title: "Textos e notas",
+          label: "Escrita",
+          title: "Escrita",
           description: "Ensaios breves sobre design, processo e cultura visual.",
         },
         drawings: {
-          label: "Drawings",
+          label: "Desenhos",
           title: "Desenhos",
-          description: "Estudos, séries visuais e observações em linha.",
+          description:
+            "Bom demais de brincar de desenhar. dá uma olhada no que eu fiz aqui.",
         },
         dev: {
           label: "Dev",

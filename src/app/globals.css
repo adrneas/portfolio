@@ -59,6 +59,15 @@ svg {
   max-width: 100%;
 }
 
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+}
+
 .site-shell {
   min-height: 100vh;
   display: flex;
@@ -487,6 +496,14 @@ svg {
   align-self: center;
 }
 
+.entry-row--minimal {
+  grid-template-columns: minmax(0, 1fr);
+}
+
+.entry-row--minimal .entry-cover {
+  min-height: 340px;
+}
+
 .entry-body p {
   max-width: 720px;
   margin: 10px 0 0;
@@ -775,7 +792,8 @@ svg {
   min-width: 0;
 }
 
-.fun-card a {
+.fun-card a,
+.fun-card__button {
   min-height: 100%;
   display: flex;
   flex-direction: column;
@@ -783,6 +801,13 @@ svg {
   border: 1px solid var(--ink);
   border-radius: var(--radius);
   background: var(--surface);
+}
+
+.fun-card__button {
+  width: 100%;
+  padding: 0;
+  color: inherit;
+  cursor: zoom-in;
 }
 
 .fun-card__cover {
@@ -817,6 +842,19 @@ svg {
 
 .fun-card--minimal .fun-card__body {
   min-height: auto;
+}
+
+.fun-card--minimal a {
+  display: block;
+}
+
+.fun-card--minimal .fun-card__button {
+  display: block;
+}
+
+.fun-card--minimal .fun-card__cover {
+  aspect-ratio: 3 / 4;
+  border-bottom: 0;
 }
 
 .fun-card__body h3 {
@@ -860,6 +898,55 @@ svg {
   line-height: 1.6;
 }
 
+.drawing-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 80;
+  display: grid;
+  grid-template-columns: minmax(44px, 1fr) auto minmax(44px, 1fr);
+  gap: 18px;
+  align-items: center;
+  justify-items: center;
+  padding: 0 24px;
+  background: rgba(23, 23, 22, 0.86);
+  cursor: zoom-out;
+}
+
+.drawing-overlay__image {
+  height: 100dvh;
+  display: grid;
+  place-items: center;
+  cursor: default;
+}
+
+.drawing-overlay__image img {
+  width: auto;
+  height: 100dvh;
+  max-width: calc(100vw - 156px);
+  display: block;
+  object-fit: contain;
+}
+
+.drawing-overlay__nav {
+  z-index: 1;
+  display: grid;
+  place-items: center;
+  width: 52px;
+  height: 72px;
+  border: 1px solid rgba(251, 251, 247, 0.72);
+  border-radius: var(--radius);
+  background: rgba(251, 251, 247, 0.16);
+  color: var(--surface);
+  cursor: pointer;
+  font-size: 2rem;
+  line-height: 1;
+}
+
+.drawing-overlay__nav:hover {
+  background: var(--surface);
+  color: var(--ink);
+}
+
 .detail-hero {
   display: grid;
   grid-template-columns: minmax(0, 1fr) minmax(280px, 420px);
@@ -867,6 +954,17 @@ svg {
   align-items: end;
   padding-bottom: 34px;
   border-bottom: 1px solid var(--ink);
+}
+
+.detail-hero--minimal {
+  grid-template-columns: 1fr;
+  align-items: start;
+  padding-top: 18px;
+}
+
+.detail-hero--minimal .detail-cover {
+  width: min(100%, 1040px);
+  margin-inline: auto;
 }
 
 .detail-hero p {
@@ -1125,6 +1223,22 @@ svg {
   .fun-card__footer {
     flex-direction: column;
     gap: 6px;
+  }
+
+  .drawing-overlay {
+    grid-template-columns: 42px minmax(0, 1fr) 42px;
+    gap: 8px;
+    padding: 0 8px;
+  }
+
+  .drawing-overlay__image img {
+    max-width: calc(100vw - 100px);
+  }
+
+  .drawing-overlay__nav {
+    width: 40px;
+    height: 58px;
+    font-size: 1.5rem;
   }
 
   .site-nav {

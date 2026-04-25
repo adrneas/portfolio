@@ -31,29 +31,34 @@ export function EntryList({ entries }: EntryListProps) {
           <Link
             className={`entry-row${isMinimal ? " entry-row--minimal" : ""}`}
             href={entry.href}
+            aria-label={isMinimal ? entry.frontmatter.title : undefined}
             key={entry.href}
           >
-            <span className="entry-index">
-              {String(index + 1).padStart(2, "0")}
-            </span>
-            <span className="entry-body">
-              {!isMinimal && meta.length > 0 ? (
+            {!isMinimal ? (
+              <span className="entry-index">
+                {String(index + 1).padStart(2, "0")}
+              </span>
+            ) : null}
+            {!isMinimal ? (
+              <span className="entry-body">
+                {meta.length > 0 ? (
                 <span className="meta-line">{meta.join(" / ")}</span>
               ) : null}
-              <h3>{entry.frontmatter.title}</h3>
-              {!isMinimal && entry.frontmatter.summary ? (
-                <p>{entry.frontmatter.summary}</p>
-              ) : null}
-              {!isMinimal && entry.frontmatter.tags.length > 0 ? (
-                <span className="entry-meta">
-                  {entry.frontmatter.tags.slice(0, 4).map((tag) => (
-                    <span className="pill" key={tag}>
-                      {tag}
-                    </span>
-                  ))}
-                </span>
-              ) : null}
-            </span>
+                <h3>{entry.frontmatter.title}</h3>
+                {entry.frontmatter.summary ? (
+                  <p>{entry.frontmatter.summary}</p>
+                ) : null}
+                {entry.frontmatter.tags.length > 0 ? (
+                  <span className="entry-meta">
+                    {entry.frontmatter.tags.slice(0, 4).map((tag) => (
+                      <span className="pill" key={tag}>
+                        {tag}
+                      </span>
+                    ))}
+                  </span>
+                ) : null}
+              </span>
+            ) : null}
             <span className="entry-cover" aria-hidden>
               <Image
                 src={entry.frontmatter.cover}

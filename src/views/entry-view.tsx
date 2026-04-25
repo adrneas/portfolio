@@ -60,47 +60,49 @@ export function EntryView({ collection, locale, slug }: EntryViewProps) {
           {dictionary.detail.back}
         </Link>
 
-        <header className="detail-hero">
-          <div>
-            {!isMinimal ? (
+        <header
+          className={`detail-hero${isMinimal ? " detail-hero--minimal" : ""}`}
+        >
+          {!isMinimal ? (
+            <div>
               <p className="detail-kicker">
                 {entry.frontmatter.year} / {entry.frontmatter.type}
               </p>
-            ) : null}
-            <h1>{entry.frontmatter.title}</h1>
-            {!isMinimal && entry.frontmatter.summary ? (
-              <p>{entry.frontmatter.summary}</p>
-            ) : null}
-            {!isMinimal && entry.frontmatter.tags.length > 0 ? (
-              <div className="entry-meta">
-                {entry.frontmatter.tags.map((tag) => (
-                  <span className="pill" key={tag}>
-                    {tag}
-                  </span>
-                ))}
-              </div>
-            ) : null}
-            {entry.frontmatter.externalUrl ? (
-              <div className="detail-actions">
-                <a
-                  className="button-link accent"
-                  href={entry.frontmatter.externalUrl}
-                  rel="noreferrer"
-                  target="_blank"
-                >
-                  <ExternalLink aria-hidden size={18} />
-                  {dictionary.detail.externalProject}
-                </a>
-              </div>
-            ) : null}
-          </div>
+              <h1>{entry.frontmatter.title}</h1>
+              {entry.frontmatter.summary ? (
+                <p>{entry.frontmatter.summary}</p>
+              ) : null}
+              {entry.frontmatter.tags.length > 0 ? (
+                <div className="entry-meta">
+                  {entry.frontmatter.tags.map((tag) => (
+                    <span className="pill" key={tag}>
+                      {tag}
+                    </span>
+                  ))}
+                </div>
+              ) : null}
+              {entry.frontmatter.externalUrl ? (
+                <div className="detail-actions">
+                  <a
+                    className="button-link accent"
+                    href={entry.frontmatter.externalUrl}
+                    rel="noreferrer"
+                    target="_blank"
+                  >
+                    <ExternalLink aria-hidden size={18} />
+                    {dictionary.detail.externalProject}
+                  </a>
+                </div>
+              ) : null}
+            </div>
+          ) : null}
           <div className="detail-cover" aria-hidden>
             <Image
               src={entry.frontmatter.cover}
               alt=""
-              width={840}
-              height={560}
-              sizes="(max-width: 900px) 100vw, 420px"
+              width={isMinimal ? 1400 : 840}
+              height={isMinimal ? 1400 : 560}
+              sizes={isMinimal ? "100vw" : "(max-width: 900px) 100vw, 420px"}
               priority
             />
           </div>
