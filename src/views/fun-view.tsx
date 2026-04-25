@@ -42,6 +42,13 @@ export function FunView({ locale }: FunViewProps) {
 
     return {
       description: copy.description,
+      descriptionLink:
+        locale === "pt" && category === "drawings"
+          ? {
+              href: "https://www.instagram.com/adrneas/reels/",
+              label: "instagram",
+            }
+          : undefined,
       entries,
       label: copy.label,
       slug: category,

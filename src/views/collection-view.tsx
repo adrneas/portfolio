@@ -42,7 +42,9 @@ export function CollectionView({
     >
       <section className="page-title">
         <div>
-          <p className="eyebrow">{copy.title}</p>
+          {collection !== "work" ? (
+            <p className="eyebrow">{copy.title}</p>
+          ) : null}
           <h1>{copy.title}</h1>
           <p>{copy.description}</p>
         </div>

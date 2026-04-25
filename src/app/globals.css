@@ -782,6 +782,13 @@ svg {
   line-height: 1.55;
 }
 
+.fun-panel__heading a {
+  color: var(--ink);
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 4px;
+}
+
 .fun-card-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));

@@ -32,7 +32,7 @@ export const dictionaries = {
     localeLabel: "PT",
     switchLabel: "EN",
     nav: {
-      work: "Work",
+      work: "Trabalho",
       fun: "Brincadeiras",
       about: "Sobre",
     },
@@ -60,15 +60,15 @@ export const dictionaries = {
           "Há 31 anos curioso por viver e criar esse mundão do jeito que for. Como product designer, gosto da imersão em projetos complexos com desafios de simplificação e aperfeiçoamento.",
       },
       featuredWork: "Trabalhos em destaque",
-      otherRooms: "Work / Brincadeiras",
+      otherRooms: "Trabalho / Brincadeiras",
       viewAll: "Ver arquivo",
       workPreview: {
-        label: "Work",
+        label: "Trabalho",
         title: "Projetos com contexto, sistema e resultado.",
         description:
           "Cases selecionados de identidade, produto e narrativa visual, organizados para leitura rápida sem perder densidade.",
         meta: "Cases profissionais",
-        cta: "Ver work",
+        cta: "Ver trabalho",
       },
       funPreview: {
         label: "Brincadeiras",
@@ -91,7 +91,7 @@ export const dictionaries = {
     },
     collection: {
       work: {
-        title: "Work",
+        title: "Trabalho",
         description:
           "Cases curtos de design, com contexto, papel, escolhas de sistema e resultado.",
       },
@@ -139,7 +139,7 @@ export const dictionaries = {
           label: "Desenhos",
           title: "Desenhos",
           description:
-            "Bom demais de brincar de desenhar. dá uma olhada no que eu fiz aqui.",
+            "Bom demais de brincar de desenhar. dá uma olhada no que eu fiz aqui. Também tenho alguns vídeos de processos de ilustração postados como reels no meu instagram!",
         },
         dev: {
           label: "Dev",

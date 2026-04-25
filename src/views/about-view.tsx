@@ -23,7 +23,6 @@ export function AboutView({ locale }: AboutViewProps) {
     >
       <section className="page-title">
         <div>
-          <p className="eyebrow">{dictionary.nav.about}</p>
           <h1>{dictionary.about.title}</h1>
           <p>{dictionary.about.intro}</p>
         </div>

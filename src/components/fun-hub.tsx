@@ -20,6 +20,10 @@ export type FunHubEntry = {
 
 export type FunHubCategory = {
   description: string;
+  descriptionLink?: {
+    href: string;
+    label: string;
+  };
   entries: FunHubEntry[];
   label: string;
   slug: FunCategory;
@@ -157,7 +161,31 @@ export function FunHub({
         >
           <div className="fun-panel__heading">
             <h2>{activeCategory.title}</h2>
-            <p>{activeCategory.description}</p>
+            <p>
+              {activeCategory.descriptionLink ? (
+                <>
+                  {
+                    activeCategory.description.split(
+                      activeCategory.descriptionLink.label,
+                    )[0]
+                  }
+                  <a
+                    href={activeCategory.descriptionLink.href}
+                    rel="noreferrer"
+                    target="_blank"
+                  >
+                    {activeCategory.descriptionLink.label}
+                  </a>
+                  {
+                    activeCategory.description.split(
+                      activeCategory.descriptionLink.label,
+                    )[1]
+                  }
+                </>
+              ) : (
+                activeCategory.description
+              )}
+            </p>
           </div>
 
           {activeCategory.entries.length > 0 ? (

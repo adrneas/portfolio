@@ -10,5 +10,4 @@
   <rect x="746" y="374" width="202" height="132" rx="18" fill="#ff5c3f"/>
   <rect x="504" y="544" width="444" height="64" rx="32" fill="#c8ff32"/>
   <path d="M562 440h84M804 440h84M582 576h288" stroke="#171716" stroke-width="16" stroke-linecap="round"/>
-  <text x="152" y="746" fill="#171716" font-family="Arial, sans-serif" font-size="78" font-weight="700">simpool</text>
 </svg>
