@@ -1,9 +1,9 @@
 export const siteConfig = {
   name: "Andreas",
   role: "Designer visual e de produto",
-  title: "Andreas - Portfolio editorial",
+  title: "Andreas - Portfólio editorial",
   description:
-    "Portfolio editorial bilingue de design, arte, textos e projetos autorais.",
+    "Portfólio editorial bilíngue de design, arte, textos e projetos autorais.",
   url: process.env.NEXT_PUBLIC_SITE_URL ?? "https://portfolio-mois.es",
   contact: {
     email: "hello@moises.design",

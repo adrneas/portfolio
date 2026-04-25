@@ -44,20 +44,20 @@ export const dictionaries = {
     home: {
       title: "Opa, eu sou o Andreas",
       intro:
-        "Um portfolio que organiza trabalho profissional e interesses autorais com a mesma atencao: estrategia, forma, texto, desenho, codigo e repertorio.",
+        "Um portfólio que organiza trabalho profissional e interesses autorais com a mesma atenção: estratégia, forma, texto, desenho, código e repertório.",
       rotatingPhrases: [
-        "work com criterio visual",
+        "work com critério visual",
         "writing como processo",
         "drawings como pesquisa",
-        "dev como laboratorio",
-        "travel como repertorio",
+        "dev como laboratório",
+        "travel como repertório",
       ],
       rotatingPrefix: "Agora:",
       profile: {
         imageAlt: "Retrato de Andreas",
         socialLabel: "Links sociais de Andreas",
         description:
-          "Designer visual e de produto, interessado em transformar sistemas complexos em experiencias claras, memoraveis e com uma voz propria.",
+          "Designer visual e de produto, interessado em transformar sistemas complexos em experiências claras, memoráveis e com uma voz própria.",
       },
       featuredWork: "Trabalhos em destaque",
       otherRooms: "Work / Fun",
@@ -66,7 +66,7 @@ export const dictionaries = {
         label: "Work",
         title: "Projetos com contexto, sistema e resultado.",
         description:
-          "Cases selecionados de identidade, produto e narrativa visual, organizados para leitura rapida sem perder densidade.",
+          "Cases selecionados de identidade, produto e narrativa visual, organizados para leitura rápida sem perder densidade.",
         meta: "Cases profissionais",
         cta: "Ver work",
       },
@@ -74,19 +74,19 @@ export const dictionaries = {
         label: "Fun",
         title: "Travel, writing, drawings e dev no mesmo arquivo.",
         description:
-          "A area autoral vai reunir diarios visuais, textos, desenhos e experimentos de codigo depois da validacao da home.",
+          "A área autoral vai reunir diários visuais, textos, desenhos e experimentos de código depois da validação da home.",
         meta: "itens atuais",
         cta: "Ver fun",
       },
       status: [
-        ["Foco", "Portfolio editorial"],
-        ["Agora", "Home em validacao"],
+        ["Foco", "Portfólio editorial"],
+        ["Agora", "Home em validação"],
         ["Depois", "Hub Fun"],
       ],
       signals: [
         "Identidade e sistemas visuais",
         "Interfaces para times e produtos digitais",
-        "Arte, texto, codigo e repertorio de viagem",
+        "Arte, texto, código e repertório de viagem",
       ],
     },
     collection: {
@@ -98,37 +98,37 @@ export const dictionaries = {
       travel: {
         title: "Travel",
         description:
-          "Diarios visuais de viagens, lugares e repertorios que alimentam o olhar.",
+          "Diários visuais de viagens, lugares e repertórios que alimentam o olhar.",
       },
       art: {
         title: "Art",
         description:
-          "Desenhos, series visuais e estudos que funcionam como pesquisa pessoal.",
+          "Desenhos, séries visuais e estudos que funcionam como pesquisa pessoal.",
       },
       notes: {
         title: "Notes",
         description:
-          "Textos breves sobre design, repertorio, processo e cultura visual.",
+          "Textos breves sobre design, repertório, processo e cultura visual.",
       },
       lab: {
         title: "Lab",
         description:
-          "Passion projects, prototipos e ferramentas pequenas que ainda estao em movimento.",
+          "Passion projects, protótipos e ferramentas pequenas que ainda estão em movimento.",
       },
     },
     fun: {
       title: "Fun",
       eyebrow: "Arquivo autoral",
       description:
-        "Travel, writing, drawings e dev reunidos como extensoes do processo: repertorio, texto, desenho e experimentos.",
+        "Travel, writing, drawings e dev reunidos como extensões do processo: repertório, texto, desenho e experimentos.",
       empty:
-        "Ainda nao ha itens publicados nesta categoria. A estrutura esta pronta para receber novos diarios e experimentos.",
+        "Ainda não há itens publicados nesta categoria. A estrutura está pronta para receber novos diários e experimentos.",
       view: "Abrir",
       categories: {
         travel: {
           label: "Travel",
-          title: "Diarios visuais",
-          description: "Lugares, percursos e imagens que viram repertorio.",
+          title: "Diários visuais",
+          description: "Lugares, percursos e imagens que viram repertório.",
         },
         writing: {
           label: "Writing",
@@ -138,12 +138,12 @@ export const dictionaries = {
         drawings: {
           label: "Drawings",
           title: "Desenhos",
-          description: "Estudos, series visuais e observacoes em linha.",
+          description: "Estudos, séries visuais e observações em linha.",
         },
         dev: {
           label: "Dev",
           title: "Experimentos",
-          description: "Prototipos, ferramentas pequenas e testes de codigo.",
+          description: "Protótipos, ferramentas pequenas e testes de código.",
         },
       },
     },
@@ -163,14 +163,14 @@ export const dictionaries = {
     about: {
       title: "Sobre",
       intro:
-        "Sou designer visual e de produto, interessado em transformar sistemas complexos em experiencias claras, memoraveis e com uma voz propria.",
+        "Sou designer visual e de produto, interessado em transformar sistemas complexos em experiências claras, memoráveis e com uma voz própria.",
       bio:
-        "Este site foi pensado como portfolio profissional e arquivo autoral. A ideia e mostrar cases de design com objetividade, mas tambem deixar visivel o que alimenta o trabalho: desenho, texto, pesquisa visual e projetos feitos por interesse genuino.",
-      practiceTitle: "Pratica",
+        "Este site foi pensado como portfólio profissional e arquivo autoral. A ideia é mostrar cases de design com objetividade, mas também deixar visível o que alimenta o trabalho: desenho, texto, pesquisa visual e projetos feitos por interesse genuíno.",
+      practiceTitle: "Prática",
       practice: [
-        "Identidade visual, linguagem de marca e direcao de arte.",
+        "Identidade visual, linguagem de marca e direção de arte.",
         "Interfaces, sistemas de design e ferramentas para equipes.",
-        "Narrativas editoriais, arquivos visuais e prototipos pessoais.",
+        "Narrativas editoriais, arquivos visuais e protótipos pessoais.",
       ],
       contactTitle: "Contato",
     },
