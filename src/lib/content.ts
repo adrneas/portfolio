@@ -25,6 +25,7 @@ export type EntryFrontmatter = {
   tags: string[];
   featured: boolean;
   draft: boolean;
+  minimal: boolean;
   role?: string;
   discipline?: string[];
   client?: string;
@@ -92,6 +93,7 @@ function readEntryFile(
     tags: toStringArray(data.tags),
     featured: Boolean(data.featured),
     draft: Boolean(data.draft),
+    minimal: Boolean(data.minimal),
     role: toString(data.role, ""),
     discipline: toStringArray(data.discipline),
     client: toString(data.client, ""),

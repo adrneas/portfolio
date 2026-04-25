@@ -9,6 +9,7 @@ import type { FunCategory } from "@/lib/i18n";
 export type FunHubEntry = {
   cover: string;
   href: string;
+  minimal: boolean;
   summary: string;
   tags: string[];
   title: string;
@@ -103,7 +104,7 @@ export function FunHub({
             <motion.div className="fun-card-grid" layout>
               {activeCategory.entries.map((entry) => (
                 <motion.article
-                  className="fun-card"
+                  className={`fun-card${entry.minimal ? " fun-card--minimal" : ""}`}
                   key={entry.href}
                   layout
                   whileHover={shouldReduceMotion ? undefined : { y: -4 }}
@@ -119,15 +120,21 @@ export function FunHub({
                       />
                     </span>
                     <span className="fun-card__body">
-                      <span className="meta-line">
-                        {entry.year} / {entry.type}
-                      </span>
+                      {!entry.minimal ? (
+                        <span className="meta-line">
+                          {entry.year} / {entry.type}
+                        </span>
+                      ) : null}
                       <h3>{entry.title}</h3>
-                      <p>{entry.summary}</p>
-                      <span className="fun-card__footer">
-                        <span>{viewLabel}</span>
-                        <span>{entry.tags.slice(0, 2).join(" / ")}</span>
-                      </span>
+                      {!entry.minimal && entry.summary ? (
+                        <p>{entry.summary}</p>
+                      ) : null}
+                      {!entry.minimal ? (
+                        <span className="fun-card__footer">
+                          <span>{viewLabel}</span>
+                          <span>{entry.tags.slice(0, 2).join(" / ")}</span>
+                        </span>
+                      ) : null}
                     </span>
                   </Link>
                 </motion.article>

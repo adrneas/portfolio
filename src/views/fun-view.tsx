@@ -32,6 +32,7 @@ export function FunView({ locale }: FunViewProps) {
     const entries = getEntries(collection, locale).map((entry) => ({
       cover: entry.frontmatter.cover,
       href: entry.href,
+      minimal: entry.frontmatter.minimal,
       summary: entry.frontmatter.summary,
       tags: entry.frontmatter.tags,
       title: entry.frontmatter.title,

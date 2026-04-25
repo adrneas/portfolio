@@ -483,6 +483,10 @@ svg {
   line-height: 1.15;
 }
 
+.entry-row--minimal .entry-body {
+  align-self: center;
+}
+
 .entry-body p {
   max-width: 720px;
   margin: 10px 0 0;
@@ -809,6 +813,10 @@ svg {
   justify-content: space-between;
   gap: 14px;
   padding: 16px;
+}
+
+.fun-card--minimal .fun-card__body {
+  min-height: auto;
 }
 
 .fun-card__body h3 {

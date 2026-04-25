@@ -39,6 +39,7 @@ export function EntryView({ collection, locale, slug }: EntryViewProps) {
   const funCategory = getFunCategoryFromCollection(collection);
   const parentHref = funCategory ? funPath(locale) : collectionPath(locale, collection);
   const activeSection = funCategory ? "fun" : "work";
+  const isMinimal = entry.frontmatter.minimal;
 
   const caseMeta = [
     [dictionary.detail.role, entry.frontmatter.role],
@@ -61,18 +62,24 @@ export function EntryView({ collection, locale, slug }: EntryViewProps) {
 
         <header className="detail-hero">
           <div>
-            <p className="detail-kicker">
-              {entry.frontmatter.year} / {entry.frontmatter.type}
-            </p>
+            {!isMinimal ? (
+              <p className="detail-kicker">
+                {entry.frontmatter.year} / {entry.frontmatter.type}
+              </p>
+            ) : null}
             <h1>{entry.frontmatter.title}</h1>
-            <p>{entry.frontmatter.summary}</p>
-            <div className="entry-meta">
-              {entry.frontmatter.tags.map((tag) => (
-                <span className="pill" key={tag}>
-                  {tag}
-                </span>
-              ))}
-            </div>
+            {!isMinimal && entry.frontmatter.summary ? (
+              <p>{entry.frontmatter.summary}</p>
+            ) : null}
+            {!isMinimal && entry.frontmatter.tags.length > 0 ? (
+              <div className="entry-meta">
+                {entry.frontmatter.tags.map((tag) => (
+                  <span className="pill" key={tag}>
+                    {tag}
+                  </span>
+                ))}
+              </div>
+            ) : null}
             {entry.frontmatter.externalUrl ? (
               <div className="detail-actions">
                 <a
@@ -110,9 +117,11 @@ export function EntryView({ collection, locale, slug }: EntryViewProps) {
           </dl>
         ) : null}
 
-        <div className="prose">
-          <MDXRemote components={mdxComponents} source={entry.body} />
-        </div>
+        {!isMinimal && entry.body.trim() ? (
+          <div className="prose">
+            <MDXRemote components={mdxComponents} source={entry.body} />
+          </div>
+        ) : null}
       </article>
     </SiteShell>
   );
