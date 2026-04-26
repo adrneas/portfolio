@@ -46,18 +46,18 @@ export const dictionaries = {
       intro:
         "Um portfólio que organiza trabalho profissional e interesses autorais com a mesma atenção: estratégia, forma, texto, desenho, código e repertório.",
       rotatingPhrases: [
-        "nômade digital há 3 anos",
-        "desenho enquanto converso e vice versa",
-        "aprendendo a dançar forró",
-        "me divirto criando e estudando",
-        "valorizo curiosidade e empatia",
+        "Nômade digital há 3 anos",
+        "Tento não pisar no pé de ninguém no forró",
+        "Penso em sistemas, plantas, arte e código",
+        "Desenho enquanto converso (e vice-versa)",
+        "Entendo de setups em mesas de cozinha",
       ],
       rotatingPrefix: "Agora:",
       profile: {
         imageAlt: "Retrato de Andreas",
         socialLabel: "Links sociais de Andreas",
         description:
-          "Há 31 anos curioso por viver e criar esse mundão do jeito que for. Como product designer, gosto da imersão em projetos complexos com desafios de simplificação e aperfeiçoamento.",
+          "Há 31 anos movido a curiosidade por esse mundão. Como Product Designer, foco em decantar a complexidade para entregar interfaces que pareçam óbvias.",
       },
       featuredWork: "Trabalhos em destaque",
       otherRooms: "Trabalho / Brincadeiras",
