@@ -87,26 +87,35 @@ export function HomeHeroMotion({
           aria-live="polite"
           variants={item}
         >
-          <AnimatePresence mode="wait" initial={false}>
-            <motion.span
-              animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
-              className="home-rotator__phrase"
-              exit={
-                shouldReduceMotion
-                  ? { opacity: 0 }
-                  : { opacity: 0, y: -14, filter: "blur(4px)" }
-              }
-              initial={
-                shouldReduceMotion
-                  ? { opacity: 0 }
-                  : { opacity: 0, y: 14, filter: "blur(4px)" }
-              }
-              key={phrases[activePhrase]}
-              transition={{ duration: 0.32 }}
-            >
-              {phrases[activePhrase]}
-            </motion.span>
-          </AnimatePresence>
+          <span className="home-rotator__sizer" aria-hidden="true">
+            {phrases.map((phrase) => (
+              <span className="home-rotator__phrase" key={phrase}>
+                {phrase}
+              </span>
+            ))}
+          </span>
+          <span className="home-rotator__stage">
+            <AnimatePresence mode="wait" initial={false}>
+              <motion.span
+                animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
+                className="home-rotator__phrase"
+                exit={
+                  shouldReduceMotion
+                    ? { opacity: 0 }
+                    : { opacity: 0, y: -14, filter: "blur(4px)" }
+                }
+                initial={
+                  shouldReduceMotion
+                    ? { opacity: 0 }
+                    : { opacity: 0, y: 14, filter: "blur(4px)" }
+                }
+                key={phrases[activePhrase]}
+                transition={{ duration: 0.32 }}
+              >
+                {phrases[activePhrase]}
+              </motion.span>
+            </AnimatePresence>
+          </span>
         </motion.div>
         <motion.div variants={item}>{children}</motion.div>
       </motion.div>

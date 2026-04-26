@@ -46,7 +46,7 @@ export const dictionaries = {
       intro:
         "Um portfólio que organiza trabalho profissional e interesses autorais com a mesma atenção: estratégia, forma, texto, desenho, código e repertório.",
       rotatingPhrases: [
-        "nômade digital há 2 anos",
+        "nômade digital há 3 anos",
         "desenho enquanto converso e vice versa",
         "aprendendo a dançar forró",
         "me divirto criando e estudando",
@@ -194,7 +194,7 @@ export const dictionaries = {
       intro:
         "A portfolio that gives professional work and authored interests the same care: strategy, form, writing, drawing, code, and references.",
       rotatingPhrases: [
-        "digital nomad for 2 years",
+        "digital nomad for 3 years",
         "I draw while I talk and vice versa",
         "learning to dance forró",
         "having fun creating and studying",

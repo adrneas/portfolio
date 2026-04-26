@@ -265,9 +265,30 @@ svg {
 }
 
 .home-rotator {
-  min-height: clamp(3rem, 6vw, 5.35rem);
+  display: grid;
   width: min(900px, 100%);
   overflow: hidden;
+}
+
+.home-rotator__sizer,
+.home-rotator__stage {
+  grid-area: 1 / 1;
+  min-width: 0;
+}
+
+.home-rotator__sizer,
+.home-rotator__stage {
+  display: grid;
+}
+
+.home-rotator__sizer {
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.home-rotator__sizer .home-rotator__phrase,
+.home-rotator__stage .home-rotator__phrase {
+  grid-area: 1 / 1;
 }
 
 .home-rotator__phrase {
@@ -572,14 +593,15 @@ svg {
 }
 
 .home-preview-card {
-  min-height: 330px;
+  min-height: 370px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  gap: 34px;
   overflow: hidden;
   border: 1px solid var(--ink);
   border-radius: var(--radius);
-  padding: 18px;
+  padding: 24px;
   background: var(--surface);
   box-shadow: 0 12px 0 rgba(23, 23, 22, 0.06);
 }
@@ -611,9 +633,14 @@ svg {
   font-weight: 780;
 }
 
+.home-preview-card__body {
+  display: grid;
+  gap: 22px;
+}
+
 .home-preview-card__body p {
   max-width: 620px;
-  margin: 18px 0 0;
+  margin: 0;
   color: var(--muted);
   font-size: 1rem;
   line-height: 1.55;
@@ -1259,7 +1286,9 @@ svg {
   }
 
   .home-preview-card {
-    min-height: 280px;
+    min-height: 320px;
+    gap: 26px;
+    padding: 20px;
   }
 
   .home-preview-card__top {
