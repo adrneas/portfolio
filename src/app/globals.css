@@ -1314,40 +1314,45 @@ svg {
   }
 
   .drawing-overlay {
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: minmax(0, 1fr) auto;
-    gap: 10px;
-    align-items: end;
-    padding: 54px 0 16px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    gap: 0;
+    align-items: center;
+    padding: 0;
   }
 
   .drawing-overlay__image {
-    grid-column: 1 / -1;
+    grid-area: 1 / 1;
     width: 100vw;
-    height: auto;
-    max-height: calc(100dvh - 142px);
+    height: 100dvh;
+    max-height: none;
   }
 
   .drawing-overlay__image img {
-    width: 100vw;
+    width: auto;
     height: auto;
-    max-height: calc(100dvh - 142px);
     max-width: 100vw;
+    max-height: 100dvh;
   }
 
   .drawing-overlay__nav {
-    position: static;
-    width: 40px;
+    position: absolute;
+    top: 50%;
+    width: 44px;
     height: 58px;
+    transform: translateY(-50%);
+    border-color: rgba(251, 251, 247, 0.68);
+    background: rgba(23, 23, 22, 0.62);
+    box-shadow: 0 8px 22px rgba(23, 23, 22, 0.18);
     font-size: 1.5rem;
   }
 
   .drawing-overlay__nav--previous {
-    justify-self: end;
+    left: max(10px, env(safe-area-inset-left));
   }
 
   .drawing-overlay__nav--next {
-    justify-self: start;
+    right: max(10px, env(safe-area-inset-right));
   }
 
   .drawing-overlay__close {
