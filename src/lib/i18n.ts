@@ -42,7 +42,7 @@ export const dictionaries = {
       cv: "CV",
     },
     home: {
-      title: "Hey, I'm Andreas",
+      title: "Opa, eu sou o Andreas",
       intro:
         "Um portfólio que organiza trabalho profissional e interesses autorais com a mesma atenção: estratégia, forma, texto, desenho, código e repertório.",
       rotatingPhrases: [
@@ -190,22 +190,22 @@ export const dictionaries = {
       cv: "CV",
     },
     home: {
-      title: "Opa, eu sou o Andreas",
+      title: "Hey, I'm Andreas",
       intro:
         "A portfolio that gives professional work and authored interests the same care: strategy, form, writing, drawing, code, and references.",
       rotatingPhrases: [
-        "digital nomad for 3 years",
-        "I draw while I talk and vice versa",
-        "learning to dance forró",
-        "having fun creating and studying",
-        "I value curiosity and empathy",
+        "Digital nomad for 3 years",
+        "I try not to step on anyone's feet while dancing forró",
+        "I think about systems, plants, art, and code",
+        "I draw while talking (and vice versa)",
+        "I know my way around kitchen table setups",
       ],
       rotatingPrefix: "Now:",
       profile: {
         imageAlt: "Portrait of Andreas",
         socialLabel: "Andreas social links",
         description:
-          "Curious for 31 years about living and creating in this big world however possible. As a product designer, I enjoy immersing myself in complex projects with challenges of simplification and refinement.",
+          "Driven by curiosity about this big world for 31 years. As a Product Designer, I focus on distilling complexity to deliver interfaces that feel obvious.",
       },
       featuredWork: "Featured work",
       otherRooms: "Work / Fun",
