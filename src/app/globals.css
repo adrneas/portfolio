@@ -1168,6 +1168,17 @@ svg {
   width: min(calc(100vw - 32px), 860px);
 }
 
+.prose .case-figure--pair {
+  width: min(calc(100vw - 32px), 960px);
+}
+
+.prose .case-figure__pair {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+  align-items: start;
+}
+
 .prose .case-figure img {
   margin: 0;
   background: var(--surface);
@@ -1429,6 +1440,10 @@ svg {
   .fun-card-grid,
   .case-meta,
   .case-highlight-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .prose .case-figure__pair {
     grid-template-columns: 1fr;
   }
 

@@ -1,0 +1,108 @@
+---
+title: "Eagle Care: app cidadão em movimento"
+slug: "eagle-care-citizen-app"
+locale: "pt"
+year: 2026
+type: "Civic health app"
+summary: "Redesign da home, menu e notificações do app cidadão da Eagle Care, transformando uma experiência reativa em uma superfície de cuidado, orientação e comunicação pública."
+cover: "/covers/eagle-care-citizen-app.svg"
+tags: ["produto", "saúde pública", "mobile", "UX"]
+featured: true
+draft: false
+role: "Auditoria UX, arquitetura de informação, UX/UI, prototipação e estratégia de estados"
+discipline: ["Product design", "UX strategy", "UI design", "Information architecture"]
+client: "Eagle Care"
+collaborators: ["Produto", "Engenharia", "Gestão municipal"]
+outcome: "Uma proposta de experiência mais útil para o cidadão, com home contextual, menu reorganizado, notificações acionáveis e estados vazios que mantêm a pessoa orientada."
+---
+
+Este case nasceu de uma pergunta simples: o que acontece quando a home de um app de saúde municipal deixa de ser uma saudação e começa a trabalhar pelo cidadão?
+
+A versão anterior do Eagle Care cumpria funções importantes, mas se comportava como uma porta de entrada silenciosa. O usuário abria o aplicativo, procurava uma tarefa específica e saía. Para uma plataforma que conecta pessoas a serviços de saúde, consultas, medicamentos, informações públicas e suporte, esse padrão revelava uma oportunidade maior: transformar o primeiro contato em uma superfície de valor.
+
+<div className="case-highlight-grid">
+  <div>
+    <strong>Diagnóstico</strong>
+    <span>A home tinha baixo valor funcional, enquanto o menu escondia tarefas essenciais em uma lista extensa.</span>
+  </div>
+  <div>
+    <strong>Estratégia</strong>
+    <span>Reorganizar a experiência ao redor de contexto, prioridade e próxima ação, sem aumentar a carga cognitiva.</span>
+  </div>
+  <div>
+    <strong>Entrega</strong>
+    <span>Nova home, menu em grid, central de notificações e estados vazios desenhados para orientar o uso.</span>
+  </div>
+</div>
+
+## O ponto de partida
+
+A home antiga concentrava a atenção em uma saudação visual. Ela criava presença de marca, mas não respondia às perguntas mais prováveis de quem abre um app de saúde: tenho consulta próxima? há medicamento para lembrar? existe alguma comunicação importante do município?
+
+O menu seguia o mesmo padrão de esforço. As funções apareciam em uma lista linear, com muitos itens competindo no mesmo nível de importância. Não havia agrupamento por intenção, o que aumentava o tempo de busca e tornava a navegação mais dependente de leitura do que de reconhecimento.
+
+<figure className="case-figure case-figure--pair">
+  <div className="case-figure__pair">
+    <img src="/work/eagle-care/old-home.png" alt="Home antiga do Eagle Care, com saudação central e pouco conteúdo acionável." />
+    <img src="/work/eagle-care/old-menu.png" alt="Menu antigo do Eagle Care, organizado como uma lista longa de funcionalidades." />
+  </div>
+  <figcaption>A auditoria mostrou uma experiência correta, mas passiva: a home ocupava espaço sem antecipar necessidades, e o menu exigia varredura item por item.</figcaption>
+</figure>
+
+## De tela inicial para resumo útil
+
+A nova home foi desenhada como um painel de resumo. Em vez de depender do usuário para procurar tudo, a interface passa a trazer para a superfície os sinais mais relevantes: próxima consulta, lembretes de medicação, atalhos de saúde e publicações do município.
+
+Essa decisão muda a natureza da experiência. O aplicativo deixa de ser apenas uma ferramenta que responde a uma busca e passa a funcionar como um ponto de acompanhamento. Para o cidadão, isso reduz cliques e melhora a sensação de controle. Para a gestão pública, cria um canal mais visível para campanhas, avisos e orientações.
+
+<figure className="case-figure case-figure--tall">
+  <img src="/work/eagle-care/new-home.svg" alt="Nova home do Eagle Care com cards de saúde, atalhos e publicações municipais." />
+  <figcaption>A home redesenhada prioriza utilidade imediata: status, lembretes e comunicação pública aparecem antes que o usuário precise navegar.</figcaption>
+</figure>
+
+## Menu como mapa, não inventário
+
+O menu foi reestruturado para reduzir leitura e acelerar decisão. A lista extensa deu lugar a um grid com áreas de toque mais amplas, ícones mais reconhecíveis e agrupamento lógico entre ações de saúde, informações pessoais e suporte.
+
+Essa mudança não é só visual. Em apps usados por públicos diversos, a arquitetura precisa favorecer reconhecimento rápido, tolerar pouca familiaridade digital e funcionar bem em uso com uma mão. O grid ajuda a transformar uma lista de recursos em um mapa de intenções.
+
+<figure className="case-figure case-figure--pair">
+  <div className="case-figure__pair">
+    <img src="/work/eagle-care/old-menu.png" alt="Menu antigo com navegação em lista." />
+    <img src="/work/eagle-care/new-menu.svg" alt="Novo menu do Eagle Care com navegação em grid e ações agrupadas." />
+  </div>
+  <figcaption>O redesenho troca varredura linear por reconhecimento visual. A navegação fica mais clara, mais tocável e mais fácil de escalar.</figcaption>
+</figure>
+
+## Notificações que viram ação
+
+A central de notificações foi tratada como uma camada de decisão, não apenas como uma caixa de mensagens. O objetivo era reduzir trocas de contexto: confirmar uma consulta, registrar um medicamento ou entender um alerta deveria acontecer dentro do próprio fluxo da notificação.
+
+Esse padrão aproxima comunicação e tarefa. Uma mensagem deixa de ser um aviso solto e passa a carregar o próximo passo mais provável. Em saúde, esse detalhe importa: cada clique removido diminui a chance de esquecimento, abandono ou erro de interpretação.
+
+<figure className="case-figure case-figure--tall">
+  <img src="/work/eagle-care/notifications-complete.svg" alt="Central de notificações do Eagle Care com alertas e ações integradas." />
+  <figcaption>As notificações passam a ter ações integradas, conectando lembretes, consultas e mensagens públicas a decisões rápidas.</figcaption>
+</figure>
+
+## Estados vazios também fazem parte do cuidado
+
+O trabalho também cobriu momentos de ausência de dados e erro. Em vez de deixar telas vazias ou mensagens técnicas, os estados vazios foram desenhados para explicar o cenário, manter o usuário orientado e oferecer uma saída clara.
+
+Essa camada é pequena na superfície, mas importante no produto. Ela evita que o usuário interprete falta de informação como falha, reduz frustração e preserva confiança no sistema.
+
+<figure className="case-figure case-figure--pair">
+  <div className="case-figure__pair">
+    <img src="/work/eagle-care/empty-notifications.svg" alt="Estado vazio da central de notificações." />
+    <img src="/work/eagle-care/empty-page.svg" alt="Tela de página não encontrada com ilustração e orientação de retorno." />
+  </div>
+  <figcaption>Estados vazios e páginas de erro foram tratados como parte da experiência, com linguagem simples e orientação para continuar.</figcaption>
+</figure>
+
+## O que este projeto demonstra
+
+O valor do redesign está na mudança de postura do produto. A interface deixa de esperar que o cidadão descubra onde está cada coisa e passa a organizar prioridade, contexto e ação.
+
+Para potenciais contratantes, este case mostra um processo que começa na leitura crítica do produto existente, passa por arquitetura de informação e termina em interfaces capazes de sustentar uso real. A entrega visual é importante, mas ela não aparece isolada: cada tela responde a uma fricção identificada.
+
+As métricas propostas para validar a evolução seriam diretas: redução do abandono na home, aumento de interação com publicações municipais, menor tempo para encontrar funcionalidades no menu e maior taxa de conclusão em ações disparadas por notificação. O objetivo não era adicionar mais telas, mas fazer cada tela trabalhar melhor.
