@@ -122,13 +122,13 @@ export const dictionaries = {
       description:
         "Viagens, textos, desenhos e desenvolvimentos de sisteminhas. Coisas que eu tenho feito recentemente :)",
       empty:
-        "Ainda não há itens publicados nesta categoria. A estrutura está pronta para receber novos diários e experimentos.",
+        "Em construção! Organizando fotos e relatos e logo mais tá aqui :)",
       view: "Abrir",
       categories: {
         travel: {
           label: "Viagem",
           title: "Viagem",
-          description: "Lugares, percursos e imagens que viram repertório.",
+          description: "Gente e imagens, percursos e lugares.",
         },
         writing: {
           label: "Escrita",

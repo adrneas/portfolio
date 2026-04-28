@@ -226,6 +226,10 @@ svg {
   line-height: 0.88;
 }
 
+.home-title-stack h1 > span {
+  display: block;
+}
+
 .home-title-wave {
   display: inline-block;
   margin-left: 0.12em;
@@ -298,6 +302,14 @@ svg {
   font-size: clamp(2.82rem, 5.65vw, 5.18rem);
   font-weight: 560;
   line-height: 0.92;
+}
+
+.home-hero--en .home-title-stack h1 {
+  font-size: 6.15rem;
+}
+
+.home-hero--en .home-rotator__phrase {
+  font-size: 4.58rem;
 }
 
 .home-copy {
@@ -738,6 +750,7 @@ svg {
 .fun-hub {
   display: grid;
   gap: 28px;
+  margin-top: 30px;
 }
 
 .fun-tabs {
@@ -1076,6 +1089,10 @@ svg {
   line-height: 1.75;
 }
 
+.detail-hero + .prose {
+  margin-top: 36px;
+}
+
 .prose h2,
 .prose h3 {
   margin: 42px 0 12px;
@@ -1390,6 +1407,14 @@ svg {
     font-size: 3.35rem;
   }
 
+  .home-hero--en .home-title-stack h1 {
+    font-size: 3.05rem;
+  }
+
+  .home-hero--en .home-rotator__phrase {
+    font-size: 2.8rem;
+  }
+
   .entry-row {
     grid-template-columns: 48px minmax(0, 1fr);
   }
@@ -1444,6 +1469,14 @@ svg {
 
   .home-rotator__phrase {
     font-size: clamp(2.25rem, 11vw, 3.4rem);
+  }
+
+  .home-hero--en .home-title-stack h1 {
+    font-size: 2.52rem;
+  }
+
+  .home-hero--en .home-rotator__phrase {
+    font-size: 2.06rem;
   }
 
   .home-copy {

@@ -40,6 +40,7 @@ export function HomeView({ locale }: HomeViewProps) {
       locale={locale}
     >
       <HomeHeroMotion
+        locale={locale}
         phrases={dictionary.home.rotatingPhrases}
         profile={{
           ...dictionary.home.profile,

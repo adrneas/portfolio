@@ -8,6 +8,7 @@ import { useEffect, useState } from "react";
 
 type HomeHeroMotionProps = {
   children: ReactNode;
+  locale: "pt" | "en";
   phrases: readonly string[];
   profile: {
     description: string;
@@ -46,12 +47,17 @@ const item = {
 
 export function HomeHeroMotion({
   children,
+  locale,
   phrases,
   profile,
   title,
 }: HomeHeroMotionProps) {
   const shouldReduceMotion = useReducedMotion();
   const [activePhrase, setActivePhrase] = useState(0);
+  const titleLines =
+    locale === "pt"
+      ? ["Opa, eu sou", "o Andreas"]
+      : ["Hey, I'm", "Andreas"];
 
   useEffect(() => {
     if (shouldReduceMotion || phrases.length <= 1) {
@@ -66,7 +72,10 @@ export function HomeHeroMotion({
   }, [phrases.length, shouldReduceMotion]);
 
   return (
-    <section className="home-hero" aria-labelledby="home-title">
+    <section
+      className={`home-hero home-hero--${locale}`}
+      aria-labelledby="home-title"
+    >
       <motion.div
         animate="visible"
         className="home-hero__main"
@@ -74,10 +83,13 @@ export function HomeHeroMotion({
         variants={container}
       >
         <motion.div className="home-title-stack" variants={item}>
-          <h1 id="home-title">
-            {title}
-            <span className="home-title-wave" aria-hidden="true">
+          <h1 id="home-title" aria-label={title}>
+            <span>{titleLines[0]}</span>
+            <span>
+              {titleLines[1]}
+              <span className="home-title-wave" aria-hidden="true">
               👋
+              </span>
             </span>
           </h1>
         </motion.div>
