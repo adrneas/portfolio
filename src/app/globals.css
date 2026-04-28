@@ -1203,6 +1203,29 @@ svg {
   line-height: 1.5;
 }
 
+@media (min-width: 901px) {
+  .prose--eagle-care-citizen-app .case-figure {
+    display: grid;
+    justify-items: center;
+  }
+
+  .prose--eagle-care-citizen-app .case-figure__pair {
+    width: 100%;
+    align-items: center;
+  }
+
+  .prose--eagle-care-citizen-app .case-figure img {
+    width: auto;
+    max-width: 100%;
+    max-height: calc(100dvh - 144px);
+    object-fit: contain;
+  }
+
+  .prose--eagle-care-citizen-app .case-figure__pair img {
+    justify-self: center;
+  }
+}
+
 .image-lightbox {
   position: fixed;
   inset: 0;

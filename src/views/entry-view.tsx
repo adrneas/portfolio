@@ -131,7 +131,7 @@ export function EntryView({ collection, locale, slug }: EntryViewProps) {
         ) : null}
 
         {!isMinimal && entry.body.trim() ? (
-          <div className="prose" id={proseId}>
+          <div className={`prose prose--${slug}`} id={proseId}>
             <MDXRemote components={mdxComponents} source={entry.body} />
           </div>
         ) : null}
