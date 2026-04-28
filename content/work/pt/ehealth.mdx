@@ -1,0 +1,98 @@
+---
+title: "eHealth: plataforma clínica unificada"
+slug: "ehealth"
+locale: "pt"
+year: 2026
+type: "Healthtech"
+summary: "Arquitetura de produto e interface para unificar operação pública e privada em uma plataforma clínica densa, modular e orientada ao fluxo real de atendimento."
+cover: "/work/ehealth/agendamentos-dark-mode.svg"
+tags: ["produto", "healthtech", "design system", "operações"]
+featured: true
+draft: false
+role: "Pesquisa, arquitetura de informação, UX/UI, desenho de fluxos e sistema visual"
+discipline: ["Product design", "UX research", "UI design", "Design system"]
+client: "Eagle Care / eHealth"
+collaborators: ["Produto", "Engenharia", "Corpo clínico", "Recepção", "Gestão pública e privada"]
+outcome: "Uma base de produto capaz de atender rotinas públicas e privadas sem bifurcar a aplicação, reduzindo carga cognitiva em agendas, triagem e prontuário."
+---
+
+O projeto partiu de uma tensão comum em sistemas de saúde: a operação pública exige profundidade, rastreabilidade e protocolos; a operação privada precisa de velocidade, clareza comercial e menor atrito no atendimento. Tratar esses mundos como produtos separados criaria dívida técnica e uma experiência inconsistente. O trabalho foi desenhado para provar outra hipótese: uma mesma arquitetura poderia servir aos dois contextos se a interface fosse modular, configurável e radicalmente orientada ao fluxo.
+
+<div className="case-highlight-grid">
+  <div>
+    <strong>Pesquisa</strong>
+    <span>Grupos focais com médicos, recepção e gestão para separar desejo de funcionalidade de fricção operacional real.</span>
+  </div>
+  <div>
+    <strong>Arquitetura</strong>
+    <span>Uma base única para Eagle Care e eHealth, com permissões e módulos capazes de mudar por contexto sem quebrar layout.</span>
+  </div>
+  <div>
+    <strong>Interface</strong>
+    <span>Dashboards densos, prontuário com disclosure progressivo e fluxo SOAP guiado por etapas.</span>
+  </div>
+</div>
+
+## Pesquisa antes da tela
+
+A investigação foi organizada em três perfis de uso: corpo clínico, linha de frente e gestão. O objetivo não era colecionar uma lista de telas, mas entender quais problemas se repetiam independentemente do tipo de instituição.
+
+Para médicos, a dor central era a relação entre tempo de tela e tempo de paciente. Sistemas fragmentados faziam o profissional alternar entre abas, buscar sinais vitais, recuperar histórico e preencher campos longos enquanto tentava manter a escuta ativa. Para recepção e triagem, o ponto crítico estava na identificação segura do paciente, no controle visual da agenda e na redução de duplicidades cadastrais. Para gestores, o problema era a latência: decisões dependiam de relatórios assíncronos, quando a operação precisava de leitura em tempo real.
+
+Essa triangulação definiu o foco do produto: melhorar o fluxo de entrada e o fluxo de atendimento. A interface deixou de ser pensada como um prontuário digital isolado e passou a funcionar como uma camada operacional para a clínica inteira.
+
+<figure className="case-figure case-figure--wide">
+  <img src="/work/ehealth/fluxo-operacional.svg" alt="Mapa do fluxo operacional da aplicação, conectando recepção, agendamento, prontuário e gestão." />
+  <figcaption>O mapa operacional ajudou a transformar módulos soltos em uma jornada contínua: agenda, triagem, atendimento, documentação e gestão.</figcaption>
+</figure>
+
+## Uma base para dois mundos
+
+O desafio de produto era unificar o Eagle Care, já consolidado na gestão de saúde pública municipal, com o eHealth, uma frente voltada para clínicas e hospitais particulares. A decisão estratégica foi evitar uma bifurcação de código e desenhar uma plataforma de base comum, onde permissões, módulos e estados de interface pudessem acomodar diferenças de operação.
+
+A direção visual acompanha essa escolha. Em vez de uma estética médica genérica, o projeto assume um dashboard utilitário: contraste claro, hierarquia tipográfica, componentes previsíveis e pouco ruído decorativo. A referência de Material Design 3 aparece menos como estilo e mais como disciplina de sistema: comportamento consistente, acessibilidade, estados claros e uma gramática de componentes fácil de escalar.
+
+O resultado é uma interface que pode esconder, revelar ou reorganizar funcionalidades conforme o perfil do usuário sem parecer remendada. A mesma estrutura comporta o rigor de um serviço público e a agilidade esperada por uma clínica privada.
+
+## Agenda como centro de comando
+
+A agenda foi tratada como a superfície de maior impacto operacional. Ela concentra volume, fila, status, identificação do paciente e sinais de risco. Por isso, a arquitetura prioriza leitura rápida: KPIs no topo, filtros de tempo, tabela com ordem lógica e metadados compactados por iconografia.
+
+O CPF aparece na leitura primária não como detalhe burocrático, mas como mecanismo de prevenção de erro. Em sistemas legados, duplicidade de cadastro costuma nascer de pequenos atalhos. Aqui, a interface traz a checagem para a superfície.
+
+<figure className="case-figure case-figure--wide">
+  <img src="/work/ehealth/agendamentos.svg" alt="Tela de agendamentos com cards de indicadores, filtros e tabela de pacientes." />
+  <figcaption>Cards de KPI e tabela em padrão de leitura Z dão à recepção uma visão rápida de volume, status e próximos atendimentos.</figcaption>
+</figure>
+
+A versão escura não foi um acabamento visual. Ela nasceu de uma condição real de uso: plantões, baixa luminosidade e turnos longos. O dark mode funciona como decisão ergonômica, reduzindo fadiga visual em ambientes onde a ferramenta permanece aberta por muitas horas.
+
+## Prontuário que acompanha o raciocínio clínico
+
+No atendimento, a prioridade muda. A interface precisa apoiar pensamento diagnóstico, não competir com ele. O prontuário foi estruturado para manter dados críticos sempre visíveis e reduzir a necessidade de navegação lateral durante a consulta.
+
+Informações como idade, peso, altura, IMC, alergias e tipo sanguíneo permanecem ancoradas no topo. Essa decisão diminui alternância de contexto em momentos sensíveis, como cálculo de dosagem, prescrição ou leitura de contraindicações. A organização em abas separa consultas, documentações e medicamentos sem quebrar a continuidade do atendimento.
+
+<figure className="case-figure case-figure--tall">
+  <img src="/work/ehealth/consulta.svg" alt="Fluxo de consulta médica com cabeçalho fixo, etapas do atendimento e área de prescrição." />
+  <figcaption>O atendimento ativo usa um fluxo guiado por etapas para reduzir a sensação de formulário infinito e organizar triagem, hipótese, conduta e documentos.</figcaption>
+</figure>
+
+A lógica SOAP foi usada como estrutura mental da tela: Subjetivo, Objetivo, Avaliação e Plano. Em vez de obrigar o médico a traduzir seu raciocínio para o sistema, a interface se aproxima da ordem natural da consulta.
+
+## Densidade sem sobrecarga
+
+Saúde é um contexto de alta densidade. O problema não é ter muita informação; o problema é mostrar tudo ao mesmo tempo. Por isso, o histórico clínico foi desenhado com disclosure progressivo. A tela apresenta metadados suficientes para orientar a busca, mas só expande o detalhe quando há intenção.
+
+<figure className="case-figure case-figure--wide">
+  <img src="/work/ehealth/historico-expandido.svg" alt="Histórico de saúde expandido com dados clínicos organizados em painéis e seções." />
+  <figcaption>Históricos colapsáveis preservam foco no atendimento atual e ainda mantêm profundidade disponível quando o médico precisa investigar contexto.</figcaption>
+</figure>
+
+Esse padrão também cria uma base para evolução futura. Especialidades, documentos, prescrições e módulos de teleatendimento podem entrar sem redesenhar a tela principal, porque a arquitetura já separa contexto, ação e histórico.
+
+## O que este case demonstra
+
+O valor do projeto está menos em uma tela isolada e mais na coerência do processo. A pesquisa identificou fricções universais. A estratégia evitou duplicar produtos. A arquitetura conectou operação, prontuário e gestão. A interface traduziu tudo isso em componentes que reduzem clique, tornam status visível e deixam o profissional focar no que realmente importa.
+
+As próximas iterações apontadas no processo seguem a mesma lógica: transcrição por IA para reduzir digitação durante anamnese, triagem desacoplada para pré-preenchimento antes da consulta e indicadores mais robustos para apoiar decisões de negócio e políticas públicas. Em vez de adicionar tecnologia como camada chamativa, a evolução planejada desloca trabalho mecânico do usuário para o sistema.

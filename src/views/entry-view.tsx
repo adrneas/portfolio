@@ -4,6 +4,7 @@ import { notFound } from "next/navigation";
 import { ExternalLink } from "lucide-react";
 import { MDXRemote } from "next-mdx-remote/rsc";
 import { mdxComponents } from "@/components/mdx-components";
+import { ProseImageLightbox } from "@/components/prose-image-lightbox";
 import { SiteShell } from "@/components/site-shell";
 import { getEntry } from "@/lib/content";
 import {
@@ -40,6 +41,7 @@ export function EntryView({ collection, locale, slug }: EntryViewProps) {
   const parentHref = funCategory ? funPath(locale) : collectionPath(locale, collection);
   const activeSection = funCategory ? "fun" : "work";
   const isMinimal = entry.frontmatter.minimal;
+  const proseId = `entry-prose-${locale}-${collection}-${slug}`;
 
   const caseMeta = [
     [dictionary.detail.role, entry.frontmatter.role],
@@ -120,9 +122,12 @@ export function EntryView({ collection, locale, slug }: EntryViewProps) {
         ) : null}
 
         {!isMinimal && entry.body.trim() ? (
-          <div className="prose">
-            <MDXRemote components={mdxComponents} source={entry.body} />
-          </div>
+          <>
+            <div className="prose" id={proseId}>
+              <MDXRemote components={mdxComponents} source={entry.body} />
+            </div>
+            <ProseImageLightbox locale={locale} rootId={proseId} />
+          </>
         ) : null}
       </article>
     </SiteShell>
