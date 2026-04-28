@@ -1071,6 +1071,38 @@ svg {
   background: var(--surface);
 }
 
+.case-meta__illustration {
+  position: relative;
+  min-height: 196px;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+  color: var(--ink);
+  background:
+    radial-gradient(circle at 18% 22%, rgba(200, 255, 50, 0.38), transparent 28%),
+    radial-gradient(circle at 82% 78%, rgba(52, 72, 255, 0.16), transparent 30%),
+    linear-gradient(135deg, rgba(255, 255, 255, 0.72), rgba(251, 251, 247, 0.2)),
+    var(--surface);
+}
+
+.case-meta__illustration--span-1 {
+  grid-column: span 1;
+}
+
+.case-meta__illustration--span-2 {
+  grid-column: span 2;
+}
+
+.case-meta__illustration--span-3 {
+  grid-column: span 3;
+}
+
+.case-meta__illustration svg {
+  width: min(92%, 560px);
+  height: auto;
+  opacity: 0.92;
+}
+
 .case-meta dt {
   color: var(--muted);
   font-family: var(--font-geist-mono), monospace;
@@ -1464,6 +1496,10 @@ svg {
   .case-meta,
   .case-highlight-grid {
     grid-template-columns: 1fr;
+  }
+
+  .case-meta__illustration {
+    display: none;
   }
 
   .prose .case-figure__pair {

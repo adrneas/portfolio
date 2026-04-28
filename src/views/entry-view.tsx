@@ -58,6 +58,12 @@ export function EntryView({ collection, locale, slug }: EntryViewProps) {
     [dictionary.detail.collaborators, entry.frontmatter.collaborators?.join(", ")],
     [dictionary.detail.outcome, entry.frontmatter.outcome],
   ].filter((item): item is [string, string] => Boolean(item[1]));
+  const caseMetaIllustrationSpan = 4 - (caseMeta.length % 4);
+  const hasCaseMetaIllustration =
+    collection === "work" &&
+    caseMeta.length > 0 &&
+    caseMetaIllustrationSpan > 0 &&
+    caseMetaIllustrationSpan < 4;
 
   return (
     <SiteShell
@@ -127,6 +133,52 @@ export function EntryView({ collection, locale, slug }: EntryViewProps) {
                 <dd>{value}</dd>
               </div>
             ))}
+            {hasCaseMetaIllustration ? (
+              <div
+                aria-hidden="true"
+                className={`case-meta__illustration case-meta__illustration--span-${caseMetaIllustrationSpan}`}
+              >
+                <svg viewBox="0 0 560 180" role="presentation">
+                  <path
+                    d="M48 128C112 66 173 146 236 86C300 25 354 102 420 66C469 39 507 55 534 74"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeLinecap="round"
+                    strokeWidth="3"
+                  />
+                  <path
+                    d="M69 50H202V150H69z"
+                    fill="var(--surface)"
+                    stroke="currentColor"
+                    strokeWidth="3"
+                  />
+                  <path
+                    d="M358 30H503V132H358z"
+                    fill="var(--surface)"
+                    stroke="currentColor"
+                    strokeWidth="3"
+                  />
+                  <circle cx="248" cy="94" r="50" fill="var(--accent)" />
+                  <circle cx="424" cy="80" r="24" fill="var(--accent-strong)" />
+                  <path
+                    d="M100 80H170M100 106H150M393 62H468M393 89H448M393 116H434"
+                    stroke="currentColor"
+                    strokeLinecap="round"
+                    strokeWidth="3"
+                  />
+                  <path
+                    d="M251 60L286 94L251 128M227 94H286"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="4"
+                  />
+                  <circle cx="48" cy="128" r="10" fill="var(--blue)" />
+                  <circle cx="534" cy="74" r="10" fill="var(--blue)" />
+                </svg>
+              </div>
+            ) : null}
           </dl>
         ) : null}
 

@@ -72,7 +72,7 @@ export const dictionaries = {
       },
       funPreview: {
         label: "Laboratório",
-        title: "Viagens, escrita, desenhos e dev. Dá uma olhada aí :)",
+        title: "Viagens, escrita, desenhos e dev. Olhaí! :)",
         description:
           "Coisas recentes entre viagem, texto, desenho e desenvolvimento de sisteminhas.",
         meta: "itens atuais",
