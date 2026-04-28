@@ -200,12 +200,6 @@ export function getCollectionTags(collection: Collection, locale: Locale) {
     for (const tag of entry.frontmatter.tags) {
       values.add(tag);
     }
-
-    if (collection === "work") {
-      for (const discipline of entry.frontmatter.discipline ?? []) {
-        values.add(discipline);
-      }
-    }
   }
 
   return Array.from(values).sort((a, b) => a.localeCompare(b));
@@ -217,10 +211,7 @@ export function entryMatchesTag(entry: ContentEntry, selectedTag?: string) {
   }
 
   const normalized = selectedTag.toLowerCase();
-  const values = [
-    ...entry.frontmatter.tags,
-    ...(entry.frontmatter.discipline ?? []),
-  ].map((value) => value.toLowerCase());
+  const values = entry.frontmatter.tags.map((value) => value.toLowerCase());
 
   return values.includes(normalized);
 }

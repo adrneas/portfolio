@@ -1,6 +1,6 @@
 export const siteConfig = {
   name: "Andreas",
-  role: "Designer visual e de produto",
+  role: "Product designer",
   title: "Andreas - Portfólio editorial",
   description:
     "Portfólio editorial bilíngue de design, arte, textos e projetos autorais.",

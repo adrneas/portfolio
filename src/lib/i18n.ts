@@ -33,7 +33,7 @@ export const dictionaries = {
     switchLabel: "EN",
     nav: {
       work: "Trabalho",
-      fun: "Brincadeiras",
+      fun: "Laboratório",
       about: "Sobre",
     },
     cta: {
@@ -60,28 +60,28 @@ export const dictionaries = {
           "Há 31 anos movido a curiosidade por esse mundão. Como Product Designer, foco em decantar a complexidade para entregar interfaces que pareçam óbvias.",
       },
       featuredWork: "Trabalhos em destaque",
-      otherRooms: "Trabalho / Brincadeiras",
+      otherRooms: "Trabalho / Laboratório",
       viewAll: "Ver arquivo",
       workPreview: {
         label: "Trabalho",
         title: "Projetos com contexto, sistema e resultado.",
         description:
-          "Cases selecionados de identidade, produto e narrativa visual, organizados para leitura rápida sem perder densidade.",
+          "Cases selecionados de UX, desenvolvimento e reestruturação parcial ou integral de produtos digitais.",
         meta: "Cases profissionais",
         cta: "Ver trabalho",
       },
       funPreview: {
-        label: "Brincadeiras",
-        title: "Viagem, escrita, desenhos e dev no mesmo arquivo.",
+        label: "Laboratório",
+        title: "Viagens, escrita, desenhos e dev. Dá uma olhada aí :)",
         description:
           "Coisas recentes entre viagem, texto, desenho e desenvolvimento de sisteminhas.",
         meta: "itens atuais",
-        cta: "Ver brincadeiras",
+        cta: "Ver laboratório",
       },
       status: [
         ["Foco", "Portfólio editorial"],
         ["Agora", "Home em validação"],
-        ["Depois", "Hub Fun"],
+        ["Depois", "Hub Laboratório"],
       ],
       signals: [
         "Identidade e sistemas visuais",
@@ -117,7 +117,7 @@ export const dictionaries = {
       },
     },
     fun: {
-      title: "Brincadeiras",
+      title: "Laboratório",
       eyebrow: "",
       description:
         "Viagens, textos, desenhos e desenvolvimentos de sisteminhas. Coisas que eu tenho feito recentemente :)",
@@ -164,14 +164,16 @@ export const dictionaries = {
     about: {
       title: "Sobre",
       intro:
-        "Sou designer visual e de produto, interessado em transformar sistemas complexos em experiências claras, memoráveis e com uma voz própria.",
+        "Sou designer visual e de produto com um background de técnico em TI, interessado em transformar sistemas complexos em experiências claras, memoráveis e com uma voz própria.",
       bio:
-        "Este site foi pensado como portfólio profissional e arquivo autoral. A ideia é mostrar cases de design com objetividade, mas também deixar visível o que alimenta o trabalho: desenho, texto, pesquisa visual e projetos feitos por interesse genuíno.",
+        "Este espaço serve como documentação da minha atuação profissional e de experimentações diversas. Apresento cases objetivos focados na resolução de problemas sistêmicos e, em paralelo, projetos independentes que exploram lógicas de desenvolvimento, prototipação, pesquisa, e também o lado artístico que não deixo pra lá.",
       practiceTitle: "Prática",
       practice: [
-        "Identidade visual, linguagem de marca e direção de arte.",
-        "Interfaces, sistemas de design e ferramentas para equipes.",
-        "Narrativas editoriais, arquivos visuais e protótipos pessoais.",
+        "Design de Produto (UX/UI), Design Systems e ferramentas internas de gestão.",
+        "Desenvolvimento Front-end e prototipação ponta a ponta.",
+        "Processos de Research, documentação e embasamento de projetos.",
+        "Identidade visual, arquitetura de informação e explorações pessoais.",
+        "Intermediação e negociação com parceiros e stakeholders.",
       ],
       contactTitle: "Contato",
     },
@@ -181,7 +183,7 @@ export const dictionaries = {
     switchLabel: "PT",
     nav: {
       work: "Work",
-      fun: "Fun",
+      fun: "Lab",
       about: "About",
     },
     cta: {
@@ -208,28 +210,28 @@ export const dictionaries = {
           "Driven by curiosity about this big world for 31 years. As a Product Designer, I focus on distilling complexity to deliver interfaces that feel obvious.",
       },
       featuredWork: "Featured work",
-      otherRooms: "Work / Fun",
+      otherRooms: "Work / Lab",
       viewAll: "View archive",
       workPreview: {
         label: "Work",
         title: "Projects with context, system, and outcome.",
         description:
-          "Selected identity, product, and visual narrative cases, structured for fast reading without losing depth.",
+          "Selected cases in UX, development, and partial or full restructuring of digital products.",
         meta: "Professional cases",
         cta: "View work",
       },
       funPreview: {
-        label: "Fun",
-        title: "Travel, writing, drawings, and dev in one archive.",
+        label: "Lab",
+        title: "Travel, writing, drawings, and dev. Take a look :)",
         description:
           "The authored side will gather visual diaries, essays, drawings, and code experiments after the home is validated.",
         meta: "current items",
-        cta: "View fun",
+        cta: "View lab",
       },
       status: [
         ["Focus", "Editorial portfolio"],
         ["Now", "Home validation"],
-        ["Next", "Fun hub"],
+        ["Next", "Lab hub"],
       ],
       signals: [
         "Identity and visual systems",
@@ -265,7 +267,7 @@ export const dictionaries = {
       },
     },
     fun: {
-      title: "Fun",
+      title: "Lab",
       eyebrow: "Authored archive",
       description:
         "Travel, writing, drawings, and dev gathered as extensions of the process: references, text, drawing, and experiments.",
@@ -311,14 +313,16 @@ export const dictionaries = {
     about: {
       title: "About",
       intro:
-        "I am a visual and product designer interested in turning complex systems into clear, memorable experiences with a point of view.",
+        "I am a visual and product designer with a background as an IT technician, interested in turning complex systems into clear, memorable experiences with a voice of their own.",
       bio:
-        "This site is both a professional portfolio and an authored archive. It presents design cases with focus, while keeping visible the things that feed the work: drawing, writing, visual research, and curiosity-led projects.",
+        "This space documents my professional work and a range of experiments. I present objective cases focused on solving systemic problems and, in parallel, independent projects that explore development logic, prototyping, research, and the artistic side I do not leave behind.",
       practiceTitle: "Practice",
       practice: [
-        "Visual identity, brand language, and art direction.",
-        "Interfaces, design systems, and tools for teams.",
-        "Editorial narratives, visual archives, and personal prototypes.",
+        "Product Design (UX/UI), Design Systems, and internal management tools.",
+        "Front-end development and end-to-end prototyping.",
+        "Research processes, documentation, and project rationale.",
+        "Visual identity, information architecture, and personal explorations.",
+        "Mediation and negotiation with partners and stakeholders.",
       ],
       contactTitle: "Contact",
     },

@@ -18,10 +18,7 @@ function matchesActiveTag(entry: EntryListItem, activeTag?: string) {
   }
 
   const normalized = activeTag.toLowerCase();
-  const values = [
-    ...entry.frontmatter.tags,
-    ...(entry.frontmatter.discipline ?? []),
-  ].map((value) => value.toLowerCase());
+  const values = entry.frontmatter.tags.map((value) => value.toLowerCase());
 
   return values.includes(normalized);
 }
