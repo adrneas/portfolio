@@ -41,7 +41,15 @@ export function EntryView({ collection, locale, slug }: EntryViewProps) {
   const parentHref = funCategory ? funPath(locale) : collectionPath(locale, collection);
   const activeSection = funCategory ? "fun" : "work";
   const isMinimal = entry.frontmatter.minimal;
+  const coverId = `entry-cover-${locale}-${collection}-${slug}`;
   const proseId = `entry-prose-${locale}-${collection}-${slug}`;
+  const coverAlt =
+    locale === "pt"
+      ? `Capa do projeto ${entry.frontmatter.title}`
+      : `Project cover for ${entry.frontmatter.title}`;
+  const coverCaption =
+    locale === "pt" ? "Imagem de capa do projeto." : "Project cover image.";
+  const lightboxRootIds = entry.body.trim() ? [coverId, proseId] : [coverId];
 
   const caseMeta = [
     [dictionary.detail.role, entry.frontmatter.role],
@@ -98,10 +106,11 @@ export function EntryView({ collection, locale, slug }: EntryViewProps) {
               ) : null}
             </div>
           ) : null}
-          <div className="detail-cover" aria-hidden>
+          <div className="detail-cover" id={coverId}>
             <Image
               src={entry.frontmatter.cover}
-              alt=""
+              alt={coverAlt}
+              data-lightbox-caption={coverCaption}
               width={isMinimal ? 1400 : 840}
               height={isMinimal ? 1400 : 560}
               sizes={isMinimal ? "100vw" : "(max-width: 900px) 100vw, 420px"}
@@ -122,13 +131,11 @@ export function EntryView({ collection, locale, slug }: EntryViewProps) {
         ) : null}
 
         {!isMinimal && entry.body.trim() ? (
-          <>
-            <div className="prose" id={proseId}>
-              <MDXRemote components={mdxComponents} source={entry.body} />
-            </div>
-            <ProseImageLightbox locale={locale} rootId={proseId} />
-          </>
+          <div className="prose" id={proseId}>
+            <MDXRemote components={mdxComponents} source={entry.body} />
+          </div>
         ) : null}
+        <ProseImageLightbox locale={locale} rootIds={lightboxRootIds} />
       </article>
     </SiteShell>
   );

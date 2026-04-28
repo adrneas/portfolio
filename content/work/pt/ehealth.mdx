@@ -16,7 +16,7 @@ collaborators: ["Produto", "Engenharia", "Corpo clínico", "Recepção", "Gestã
 outcome: "Uma base de produto capaz de atender rotinas públicas e privadas sem bifurcar a aplicação, reduzindo carga cognitiva em agendas, triagem e prontuário."
 ---
 
-O projeto partiu de uma tensão comum em sistemas de saúde: a operação pública exige profundidade, rastreabilidade e protocolos; a operação privada precisa de velocidade, clareza comercial e menor atrito no atendimento. Tratar esses mundos como produtos separados criaria dívida técnica e uma experiência inconsistente. O trabalho foi desenhado para provar outra hipótese: uma mesma arquitetura poderia servir aos dois contextos se a interface fosse modular, configurável e radicalmente orientada ao fluxo.
+O projeto partiu de uma tensão comum em sistemas de saúde: a operação pública exige profundidade, rastreabilidade e protocolos; a operação privada precisa de velocidade, clareza comercial e menor atrito no atendimento. Tratar esses mundos como produtos separados criaria dívida técnica e uma experiência inconsistente. O trabalho foi desenhado para provar outra hipótese: uma mesma arquitetura poderia servir aos dois contextos se a interface fosse modular, configurável e orientada ao fluxo.
 
 <div className="case-highlight-grid">
   <div>
@@ -65,7 +65,7 @@ O CPF aparece na leitura primária não como detalhe burocrático, mas como meca
   <figcaption>Cards de KPI e tabela em padrão de leitura Z dão à recepção uma visão rápida de volume, status e próximos atendimentos.</figcaption>
 </figure>
 
-A versão escura não foi um acabamento visual. Ela nasceu de uma condição real de uso: plantões, baixa luminosidade e turnos longos. O dark mode funciona como decisão ergonômica, reduzindo fadiga visual em ambientes onde a ferramenta permanece aberta por muitas horas.
+A versão escura nasce de uma condição real de uso: plantões, baixa luminosidade e turnos longos. O dark mode funciona como decisão ergonômica, reduzindo fadiga visual em ambientes onde a ferramenta permanece aberta por muitas horas.
 
 ## Prontuário que acompanha o raciocínio clínico
 
@@ -82,7 +82,7 @@ A lógica SOAP foi usada como estrutura mental da tela: Subjetivo, Objetivo, Ava
 
 ## Densidade sem sobrecarga
 
-Saúde é um contexto de alta densidade. O problema não é ter muita informação; o problema é mostrar tudo ao mesmo tempo. Por isso, o histórico clínico foi desenhado com disclosure progressivo. A tela apresenta metadados suficientes para orientar a busca, mas só expande o detalhe quando há intenção.
+Saúde é um contexto de alta densidade, e o problema acaba sendo mostrar toda essa informação ao mesmo tempo. Por isso, o histórico clínico foi desenhado com disclosure progressivo. A tela apresenta metadados suficientes para orientar a busca, mas só expande o detalhe quando há intenção.
 
 <figure className="case-figure case-figure--wide">
   <img src="/work/ehealth/historico-expandido.svg" alt="Histórico de saúde expandido com dados clínicos organizados em painéis e seções." />
@@ -93,6 +93,6 @@ Esse padrão também cria uma base para evolução futura. Especialidades, docum
 
 ## O que este case demonstra
 
-O valor do projeto está menos em uma tela isolada e mais na coerência do processo. A pesquisa identificou fricções universais. A estratégia evitou duplicar produtos. A arquitetura conectou operação, prontuário e gestão. A interface traduziu tudo isso em componentes que reduzem clique, tornam status visível e deixam o profissional focar no que realmente importa.
+O valor do projeto está menos em uma tela isolada e mais na coerência do processo. A pesquisa identificou fricções universais enquanto a estratégia evitava duplicar produtos. A arquitetura conectou operação, prontuário e gestão. A interface traduziu tudo isso em componentes que reduzem clique, tornam status visível e deixam o profissional focar no que realmente importa.
 
 As próximas iterações apontadas no processo seguem a mesma lógica: transcrição por IA para reduzir digitação durante anamnese, triagem desacoplada para pré-preenchimento antes da consulta e indicadores mais robustos para apoiar decisões de negócio e políticas públicas. Em vez de adicionar tecnologia como camada chamativa, a evolução planejada desloca trabalho mecânico do usuário para o sistema.

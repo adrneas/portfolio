@@ -19,7 +19,7 @@ type GalleryState = {
 
 type ProseImageLightboxProps = {
   locale: Locale;
-  rootId: string;
+  rootIds: string[];
 };
 
 const labels = {
@@ -47,7 +47,11 @@ const labels = {
 
 function normalizeImage(image: HTMLImageElement): LightboxImage {
   const caption =
-    image.closest("figure")?.querySelector("figcaption")?.textContent?.trim() ??
+    image.dataset.lightboxCaption?.trim() ||
+    image
+      .closest("figure")
+      ?.querySelector("figcaption")
+      ?.textContent?.trim() ||
     "";
 
   return {
@@ -57,9 +61,17 @@ function normalizeImage(image: HTMLImageElement): LightboxImage {
   };
 }
 
+function getGalleryImages(rootIds: string[]) {
+  return rootIds.flatMap((rootId) => {
+    const root = document.getElementById(rootId);
+
+    return root ? Array.from(root.querySelectorAll("img")) : [];
+  });
+}
+
 export function ProseImageLightbox({
   locale,
-  rootId,
+  rootIds,
 }: ProseImageLightboxProps) {
   const copy = labels[locale];
   const closeButtonRef = useRef<HTMLButtonElement>(null);
@@ -71,20 +83,22 @@ export function ProseImageLightbox({
   const imageCounter = gallery ? `${gallery.activeIndex + 1} / ${imageCount}` : "";
 
   useEffect(() => {
-    const root = document.getElementById(rootId);
+    const roots = rootIds
+      .map((rootId) => document.getElementById(rootId))
+      .filter((root): root is HTMLElement => Boolean(root));
 
-    if (!root) {
+    if (roots.length === 0) {
       return;
     }
 
     const openImage = (image: HTMLImageElement) => {
-      const proseImages = Array.from(root.querySelectorAll("img"));
-      const index = proseImages.indexOf(image);
+      const galleryImages = getGalleryImages(rootIds);
+      const index = galleryImages.indexOf(image);
 
       if (index >= 0) {
         setGallery({
           activeIndex: index,
-          images: proseImages.map(normalizeImage),
+          images: galleryImages.map(normalizeImage),
         });
         setZoom(1);
       }
@@ -110,22 +124,26 @@ export function ProseImageLightbox({
       }
     };
 
-    const proseImages = Array.from(root.querySelectorAll("img"));
+    const galleryImages = getGalleryImages(rootIds);
 
-    proseImages.forEach((image) => {
+    galleryImages.forEach((image) => {
       image.tabIndex = 0;
       image.setAttribute("role", "button");
       image.setAttribute("aria-label", copy.image);
     });
 
-    root.addEventListener("click", handleClick);
-    root.addEventListener("keydown", handleKeyDown);
+    roots.forEach((root) => {
+      root.addEventListener("click", handleClick);
+      root.addEventListener("keydown", handleKeyDown);
+    });
 
     return () => {
-      root.removeEventListener("click", handleClick);
-      root.removeEventListener("keydown", handleKeyDown);
+      roots.forEach((root) => {
+        root.removeEventListener("click", handleClick);
+        root.removeEventListener("keydown", handleKeyDown);
+      });
     };
-  }, [copy.image, rootId]);
+  }, [copy.image, rootIds]);
 
   useEffect(() => {
     if (!gallery) {

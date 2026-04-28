@@ -42,7 +42,7 @@ export const dictionaries = {
       cv: "CV",
     },
     home: {
-      title: "Opa, eu sou o Andreas",
+      title: "Hey, I'm Andreas",
       intro:
         "Um portfólio que organiza trabalho profissional e interesses autorais com a mesma atenção: estratégia, forma, texto, desenho, código e repertório.",
       rotatingPhrases: [
@@ -133,7 +133,7 @@ export const dictionaries = {
         writing: {
           label: "Escrita",
           title: "Escrita",
-          description: "Ensaios breves sobre design, processo e cultura visual.",
+          description: "Gosto de escrever também. Aqui têm algumas palavras pra você.",
         },
         drawings: {
           label: "Desenhos",

@@ -1156,10 +1156,12 @@ svg {
   background: var(--surface);
 }
 
+.detail-cover img[role="button"],
 .prose img[role="button"] {
   cursor: zoom-in;
 }
 
+.detail-cover img[role="button"]:focus-visible,
 .prose img[role="button"]:focus-visible {
   outline: 3px solid var(--blue);
   outline-offset: 4px;
