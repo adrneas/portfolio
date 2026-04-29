@@ -1216,6 +1216,12 @@ svg {
   background: var(--surface);
 }
 
+.prose .case-figure--crop img {
+  height: clamp(320px, 54vw, 620px);
+  object-fit: cover;
+  object-position: top;
+}
+
 .detail-cover img[role="button"],
 .prose img[role="button"] {
   cursor: zoom-in;
