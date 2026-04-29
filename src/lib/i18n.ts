@@ -7,10 +7,10 @@ export type Section = "home" | "work" | "fun" | "about";
 
 export const collections: Collection[] = ["work", "travel", "art", "notes", "lab"];
 export const funCategorySlugs: FunCategory[] = [
-  "travel",
-  "writing",
-  "drawings",
   "dev",
+  "drawings",
+  "writing",
+  "travel",
 ];
 
 export const funCategoryCollections: Record<FunCategory, Collection> = {
@@ -136,10 +136,10 @@ export const dictionaries = {
           description: "Gosto de escrever também. Aqui têm algumas palavras pra você.",
         },
         drawings: {
-          label: "Desenhos",
+          label: "Desenho",
           title: "Desenhos",
           description:
-            "Bom demais de brincar de desenhar. dá uma olhada no que eu fiz aqui. Também tenho alguns vídeos de processos de ilustração postados como reels no meu instagram!",
+            "Bom demais de brincar de desenhar. Também tenho alguns vídeos de processos de ilustração postados como reels no meu instagram!",
         },
         dev: {
           label: "Dev",
@@ -164,7 +164,7 @@ export const dictionaries = {
     about: {
       title: "Sobre",
       intro:
-        "Sou designer visual e de produto com um background de técnico em TI, interessado em transformar sistemas complexos em experiências claras, memoráveis e com uma voz própria.",
+        "Sou designer visual e de produto com um background técnico em TI, interessado em transformar sistemas complexos em experiências claras, memoráveis e com uma voz própria.",
       bio:
         "Este espaço serve como documentação da minha atuação profissional e de experimentações diversas. Apresento cases objetivos focados na resolução de problemas sistêmicos e, em paralelo, projetos independentes que exploram lógicas de desenvolvimento, prototipação, pesquisa, e também o lado artístico que não deixo pra lá.",
       practiceTitle: "Prática",
@@ -224,7 +224,7 @@ export const dictionaries = {
         label: "Lab",
         title: "Travel, writing, drawings, and dev. Take a look :)",
         description:
-          "The authored side will gather visual diaries, essays, drawings, and code experiments after the home is validated.",
+          "Recent things I've done involving travel, writing, drawing, and systems development.",
         meta: "current items",
         cta: "View lab",
       },
@@ -268,9 +268,9 @@ export const dictionaries = {
     },
     fun: {
       title: "Lab",
-      eyebrow: "Authored archive",
+      eyebrow: "",
       description:
-        "Travel, writing, drawings, and dev gathered as extensions of the process: references, text, drawing, and experiments.",
+        "Travel, writing, drawing, and developing little systems. Things I've been doing recently :)",
       empty:
         "There are no published items in this category yet. The structure is ready for future diaries and experiments.",
       view: "Open",
@@ -282,13 +282,14 @@ export const dictionaries = {
         },
         writing: {
           label: "Writing",
-          title: "Essays and notes",
-          description: "Short essays on design, process, and visual culture.",
+          title: "Writing",
+          description: "I also enjoy writing. Here are a few words for you.",
         },
         drawings: {
           label: "Drawings",
           title: "Drawings",
-          description: "Studies, visual series, and observations in line.",
+          description:
+            "I just love to draw, what can I do?! I also have some illustration process videos posted as reels on my Instagram!",
         },
         dev: {
           label: "Dev",

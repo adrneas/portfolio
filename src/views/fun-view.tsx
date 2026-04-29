@@ -18,7 +18,7 @@ type FunViewProps = {
 
 function getDefaultCategory(categories: FunHubCategory[]): FunCategory {
   return (
-    categories.find((category) => category.entries.length > 0)?.slug ??
+    categories.find((category) => category.slug === "dev")?.slug ??
     categories[0].slug
   );
 }
@@ -43,10 +43,10 @@ export function FunView({ locale }: FunViewProps) {
     return {
       description: copy.description,
       descriptionLink:
-        locale === "pt" && category === "drawings"
+        category === "drawings"
           ? {
               href: "https://www.instagram.com/adrneas/reels/",
-              label: "instagram",
+              label: locale === "pt" ? "instagram" : "Instagram",
             }
           : undefined,
       entries,
