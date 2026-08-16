@@ -1,3 +1,5 @@
+import type { Locale } from "@/lib/i18n";
+
 export const siteConfig = {
   name: "Andreas",
   role: "Product designer",
@@ -8,7 +10,10 @@ export const siteConfig = {
   contact: {
     email: "andreas.r.hennig@gmail.com",
     whatsapp: "5551997857796",
-    cvUrl: "/CV_AndreasHennig.pdf",
+    cvUrl: {
+      pt: "/CV_Andreas_PT.pdf",
+      en: "/CV_Andreas_EN.pdf",
+    },
   },
   profileImage: "/profile.png",
   socials: {
@@ -24,4 +29,8 @@ export function getEmailHref() {
 
 export function getWhatsappHref() {
   return `https://wa.me/${siteConfig.contact.whatsapp}`;
+}
+
+export function getCvHref(locale: Locale) {
+  return siteConfig.contact.cvUrl[locale];
 }

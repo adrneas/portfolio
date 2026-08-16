@@ -1,5 +1,9 @@
-import Link from "next/link";
-import { getEmailHref, getWhatsappHref, siteConfig } from "@/config/site";
+import {
+  getCvHref,
+  getEmailHref,
+  getWhatsappHref,
+  siteConfig,
+} from "@/config/site";
 import { getDictionary, type Locale } from "@/lib/i18n";
 
 type SiteFooterProps = {
@@ -19,7 +23,9 @@ export function SiteFooter({ locale }: SiteFooterProps) {
         <a href={getWhatsappHref()} target="_blank" rel="noreferrer">
           {dictionary.cta.whatsapp}
         </a>
-        <Link href={siteConfig.contact.cvUrl}>{dictionary.cta.cv}</Link>
+        <a download href={getCvHref(locale)}>
+          {dictionary.cta.cv}
+        </a>
       </nav>
     </footer>
   );

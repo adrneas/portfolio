@@ -1,5 +1,5 @@
 import { FileDown, Mail, MessageCircle } from "lucide-react";
-import { getEmailHref, getWhatsappHref, siteConfig } from "@/config/site";
+import { getCvHref, getEmailHref, getWhatsappHref } from "@/config/site";
 import { getDictionary, type Locale } from "@/lib/i18n";
 
 type ContactStripProps = {
@@ -26,9 +26,8 @@ export function ContactStrip({ locale }: ContactStripProps) {
       </a>
       <a
         className="button-link"
-        href={siteConfig.contact.cvUrl}
-        target="_blank"
-        rel="noreferrer"
+        download
+        href={getCvHref(locale)}
       >
         <FileDown aria-hidden size={17} />
         {dictionary.cta.cv}

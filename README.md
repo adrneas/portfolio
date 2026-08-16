@@ -51,9 +51,9 @@ Itens com `draft: true` nao aparecem nas listas nem geram paginas publicas.
 
 ## Configuracao
 
-Edite `src/config/site.ts` para trocar nome, bio curta, email, WhatsApp, URL do site e link de CV.
+Edite `src/config/site.ts` para trocar nome, bio curta, email, WhatsApp, URL do site e os links de CV por idioma.
 
-Antes de publicar, substitua `public/cv-placeholder.pdf` pelo CV real ou altere `cvUrl`.
+Os PDFs dos currículos ficam em `public/` e são selecionados por `locale` em `cvUrl`.
 
 ## Rotas
 
